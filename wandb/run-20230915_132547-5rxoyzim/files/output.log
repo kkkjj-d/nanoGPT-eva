@@ -1,0 +1,37 @@
+
+step 0: train loss 10.9873, val loss 10.9915
+iter 0: loss 11.0254, time 22650.24ms, mfu -100.00%
+iter 10: loss 10.9741, time 6987.51ms, mfu 4.82%
+iter 20: loss 10.8277, time 7039.97ms, mfu 4.81%
+iter 30: loss 10.6747, time 7050.44ms, mfu 4.81%
+iter 40: loss 10.4401, time 7046.19ms, mfu 4.81%
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/linecache.py", line 47, in getlines
+    return updatecache(filename, module_globals)
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/linecache.py", line 95, in updatecache
+    stat = os.stat(fullname)
+KeyboardInterrupt
+Original exception was:
+Traceback (most recent call last):
+  File "train.py", line 382, in <module>
+    logits, loss = model(X, Y)
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1008, in forward
+    output = self._run_ddp_forward(*inputs, **kwargs)
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 969, in _run_ddp_forward
+    return module_to_run(*inputs[0], **kwargs[0])
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/yxdong/nano-gpt-test/nanoGPT-eva/model.py", line 181, in forward
+    x = block(x)
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/yxdong/nano-gpt-test/nanoGPT-eva/model.py", line 104, in forward
+    x = x + self.attn(self.ln_1(x))
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/yxdong/nano-gpt-test/nanoGPT-eva/model.py", line 72, in forward
+    y = y.transpose(1, 2).contiguous().view(B, T, C) # re-assemble all head outputs side by side
+KeyboardInterrupt

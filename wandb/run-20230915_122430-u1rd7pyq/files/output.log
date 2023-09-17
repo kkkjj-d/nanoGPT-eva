@@ -1,0 +1,42 @@
+
+step 0: train loss 10.9873, val loss 10.9915
+iter 0: loss 11.0254, time 22627.07ms, mfu -100.00%
+iter 10: loss 10.9740, time 6871.93ms, mfu 4.90%
+iter 20: loss 10.8266, time 6946.27ms, mfu 4.89%
+iter 30: loss 10.6669, time 6911.56ms, mfu 4.89%
+iter 40: loss 10.4008, time 6954.29ms, mfu 4.89%
+iter 50: loss 10.1971, time 6963.65ms, mfu 4.88%
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/linecache.py", line 47, in getlines
+    return updatecache(filename, module_globals)
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/linecache.py", line 95, in updatecache
+    stat = os.stat(fullname)
+KeyboardInterrupt
+Original exception was:
+Traceback (most recent call last):
+  File "train.py", line 382, in <module>
+    logits, loss = model(X, Y)
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1008, in forward
+    output = self._run_ddp_forward(*inputs, **kwargs)
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 969, in _run_ddp_forward
+    return module_to_run(*inputs[0], **kwargs[0])
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/yxdong/nano-gpt-test/nanoGPT-eva/model.py", line 181, in forward
+    x = block(x)
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/yxdong/nano-gpt-test/nanoGPT-eva/model.py", line 105, in forward
+    x = x + self.mlp(self.ln_2(x))
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/yxdong/nano-gpt-test/nanoGPT-eva/model.py", line 90, in forward
+    x = self.c_proj(x)
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1148, in _call_impl
+    result = forward_call(*input, **kwargs)
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+KeyboardInterrupt

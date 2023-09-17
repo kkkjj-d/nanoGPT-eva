@@ -1,0 +1,136 @@
+2023-09-07 14:53:26,722 INFO    StreamThr :2992137 [internal.py:wandb_internal():86] W&B internal server running at pid: 2992137, started at: 2023-09-07 14:53:26.721609
+2023-09-07 14:53:26,726 DEBUG   HandlerThread:2992137 [handler.py:handle_request():144] handle_request: status
+2023-09-07 14:53:26,728 INFO    WriterThread:2992137 [datastore.py:open_for_write():85] open: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230907_145326-3k0ehbm0/run-3k0ehbm0.wandb
+2023-09-07 14:53:26,733 DEBUG   SenderThread:2992137 [sender.py:send():369] send: header
+2023-09-07 14:53:26,798 DEBUG   SenderThread:2992137 [sender.py:send():369] send: run
+2023-09-07 14:53:28,187 INFO    SenderThread:2992137 [dir_watcher.py:__init__():211] watching files in: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230907_145326-3k0ehbm0/files
+2023-09-07 14:53:28,188 INFO    SenderThread:2992137 [sender.py:_start_run_threads():1100] run started: 3k0ehbm0 with start time 1694098406.717431
+2023-09-07 14:53:28,191 DEBUG   SenderThread:2992137 [sender.py:send_request():396] send_request: summary_record
+2023-09-07 14:53:28,192 INFO    SenderThread:2992137 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-09-07 14:53:28,203 DEBUG   HandlerThread:2992137 [handler.py:handle_request():144] handle_request: check_version
+2023-09-07 14:53:28,203 DEBUG   SenderThread:2992137 [sender.py:send_request():396] send_request: check_version
+2023-09-07 14:53:29,193 INFO    Thread-12 :2992137 [dir_watcher.py:_on_file_created():272] file/dir created: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230907_145326-3k0ehbm0/files/wandb-summary.json
+2023-09-07 14:53:30,552 DEBUG   HandlerThread:2992137 [handler.py:handle_request():144] handle_request: run_start
+2023-09-07 14:53:30,572 DEBUG   HandlerThread:2992137 [system_info.py:__init__():31] System info init
+2023-09-07 14:53:30,572 DEBUG   HandlerThread:2992137 [system_info.py:__init__():46] System info init done
+2023-09-07 14:53:30,572 INFO    HandlerThread:2992137 [system_monitor.py:start():181] Starting system monitor
+2023-09-07 14:53:30,572 INFO    SystemMonitor:2992137 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-09-07 14:53:30,573 INFO    HandlerThread:2992137 [system_monitor.py:probe():201] Collecting system info
+2023-09-07 14:53:30,574 INFO    SystemMonitor:2992137 [interfaces.py:start():190] Started cpu monitoring
+2023-09-07 14:53:30,575 INFO    SystemMonitor:2992137 [interfaces.py:start():190] Started disk monitoring
+2023-09-07 14:53:30,577 INFO    SystemMonitor:2992137 [interfaces.py:start():190] Started gpu monitoring
+2023-09-07 14:53:30,579 INFO    SystemMonitor:2992137 [interfaces.py:start():190] Started memory monitoring
+2023-09-07 14:53:30,580 INFO    SystemMonitor:2992137 [interfaces.py:start():190] Started network monitoring
+2023-09-07 14:53:30,627 DEBUG   HandlerThread:2992137 [system_info.py:probe():195] Probing system
+2023-09-07 14:53:30,637 DEBUG   HandlerThread:2992137 [system_info.py:_probe_git():180] Probing git
+2023-09-07 14:53:30,656 DEBUG   HandlerThread:2992137 [system_info.py:_probe_git():188] Probing git done
+2023-09-07 14:53:30,656 DEBUG   HandlerThread:2992137 [system_info.py:probe():240] Probing system done
+2023-09-07 14:53:30,656 DEBUG   HandlerThread:2992137 [system_monitor.py:probe():210] {'os': 'Linux-5.4.0-156-generic-x86_64-with-glibc2.10', 'python': '3.8.0', 'heartbeatAt': '2023-09-07T14:53:30.627353', 'startedAt': '2023-09-07T14:53:26.701176', 'docker': None, 'cuda': None, 'args': ('config/train_gpt2.py', '--optim=eva', '--eva_lr=0.0003', '--lr_s=cos', '--warmup_iters=2000', '--eva_kl_clip=0.001', '--eva_damping=0.03'), 'state': 'running', 'program': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'git@github.com:kkkjj-d/nanoGPT-eva.git', 'commit': 'eba36e84649f3c6d840a93092cb779a260544d08'}, 'email': '1262670315@qq.com', 'root': '/home/yxdong/nano-gpt-test/nanoGPT-eva', 'host': 'gpu9', 'username': 'yxdong', 'executable': '/home/yxdong/anaconda3/envs/dyx-py38/bin/python', 'cpu_count': 40, 'cpu_count_logical': 80, 'cpu_freq': {'current': 1092.688, 'min': 800.0, 'max': 3900.0}, 'cpu_freq_per_core': [{'current': 800.049, 'min': 800.0, 'max': 3900.0}, {'current': 800.309, 'min': 800.0, 'max': 3900.0}, {'current': 800.611, 'min': 800.0, 'max': 3900.0}, {'current': 800.662, 'min': 800.0, 'max': 3900.0}, {'current': 800.088, 'min': 800.0, 'max': 3900.0}, {'current': 800.141, 'min': 800.0, 'max': 3900.0}, {'current': 800.304, 'min': 800.0, 'max': 3900.0}, {'current': 800.945, 'min': 800.0, 'max': 3900.0}, {'current': 3498.356, 'min': 800.0, 'max': 3900.0}, {'current': 801.132, 'min': 800.0, 'max': 3900.0}, {'current': 801.057, 'min': 800.0, 'max': 3900.0}, {'current': 801.121, 'min': 800.0, 'max': 3900.0}, {'current': 800.224, 'min': 800.0, 'max': 3900.0}, {'current': 799.87, 'min': 800.0, 'max': 3900.0}, {'current': 980.177, 'min': 800.0, 'max': 3900.0}, {'current': 800.743, 'min': 800.0, 'max': 3900.0}, {'current': 800.603, 'min': 800.0, 'max': 3900.0}, {'current': 1154.582, 'min': 800.0, 'max': 3900.0}, {'current': 800.304, 'min': 800.0, 'max': 3900.0}, {'current': 3486.201, 'min': 800.0, 'max': 3900.0}, {'current': 800.176, 'min': 800.0, 'max': 3900.0}, {'current': 800.981, 'min': 800.0, 'max': 3900.0}, {'current': 2100.0, 'min': 800.0, 'max': 3900.0}, {'current': 800.377, 'min': 800.0, 'max': 3900.0}, {'current': 1009.734, 'min': 800.0, 'max': 3900.0}, {'current': 801.217, 'min': 800.0, 'max': 3900.0}, {'current': 800.399, 'min': 800.0, 'max': 3900.0}, {'current': 800.557, 'min': 800.0, 'max': 3900.0}, {'current': 800.0, 'min': 800.0, 'max': 3900.0}, {'current': 800.828, 'min': 800.0, 'max': 3900.0}, {'current': 800.908, 'min': 800.0, 'max': 3900.0}, {'current': 800.334, 'min': 800.0, 'max': 3900.0}, {'current': 3425.568, 'min': 800.0, 'max': 3900.0}, {'current': 800.907, 'min': 800.0, 'max': 3900.0}, {'current': 1075.217, 'min': 800.0, 'max': 3900.0}, {'current': 800.552, 'min': 800.0, 'max': 3900.0}, {'current': 800.436, 'min': 800.0, 'max': 3900.0}, {'current': 800.884, 'min': 800.0, 'max': 3900.0}, {'current': 800.19, 'min': 800.0, 'max': 3900.0}, {'current': 3204.457, 'min': 800.0, 'max': 3900.0}, {'current': 800.876, 'min': 800.0, 'max': 3900.0}, {'current': 800.169, 'min': 800.0, 'max': 3900.0}, {'current': 800.363, 'min': 800.0, 'max': 3900.0}, {'current': 800.506, 'min': 800.0, 'max': 3900.0}, {'current': 800.907, 'min': 800.0, 'max': 3900.0}, {'current': 800.781, 'min': 800.0, 'max': 3900.0}, {'current': 800.012, 'min': 800.0, 'max': 3900.0}, {'current': 800.148, 'min': 800.0, 'max': 3900.0}, {'current': 3221.299, 'min': 800.0, 'max': 3900.0}, {'current': 800.331, 'min': 800.0, 'max': 3900.0}, {'current': 800.748, 'min': 800.0, 'max': 3900.0}, {'current': 800.323, 'min': 800.0, 'max': 3900.0}, {'current': 800.923, 'min': 800.0, 'max': 3900.0}, {'current': 801.096, 'min': 800.0, 'max': 3900.0}, {'current': 1009.254, 'min': 800.0, 'max': 3900.0}, {'current': 800.741, 'min': 800.0, 'max': 3900.0}, {'current': 800.832, 'min': 800.0, 'max': 3900.0}, {'current': 1066.759, 'min': 800.0, 'max': 3900.0}, {'current': 800.417, 'min': 800.0, 'max': 3900.0}, {'current': 3214.28, 'min': 800.0, 'max': 3900.0}, {'current': 801.304, 'min': 800.0, 'max': 3900.0}, {'current': 800.323, 'min': 800.0, 'max': 3900.0}, {'current': 2099.999, 'min': 800.0, 'max': 3900.0}, {'current': 801.211, 'min': 800.0, 'max': 3900.0}, {'current': 936.844, 'min': 800.0, 'max': 3900.0}, {'current': 800.841, 'min': 800.0, 'max': 3900.0}, {'current': 800.239, 'min': 800.0, 'max': 3900.0}, {'current': 800.565, 'min': 800.0, 'max': 3900.0}, {'current': 1204.735, 'min': 800.0, 'max': 3900.0}, {'current': 800.101, 'min': 800.0, 'max': 3900.0}, {'current': 800.319, 'min': 800.0, 'max': 3900.0}, {'current': 801.39, 'min': 800.0, 'max': 3900.0}, {'current': 3000.576, 'min': 800.0, 'max': 3900.0}, {'current': 800.776, 'min': 800.0, 'max': 3900.0}, {'current': 900.404, 'min': 800.0, 'max': 3900.0}, {'current': 800.41, 'min': 800.0, 'max': 3900.0}, {'current': 800.497, 'min': 800.0, 'max': 3900.0}, {'current': 800.319, 'min': 800.0, 'max': 3900.0}, {'current': 800.647, 'min': 800.0, 'max': 3900.0}, {'current': 3525.262, 'min': 800.0, 'max': 3900.0}], 'disk': {'total': 686.5967483520508, 'used': 195.6711082458496}, 'gpu': 'NVIDIA GeForce RTX 2080 Ti', 'gpu_count': 4, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}], 'memory': {'total': 503.28995513916016}}
+2023-09-07 14:53:30,657 INFO    HandlerThread:2992137 [system_monitor.py:probe():211] Finished collecting system info
+2023-09-07 14:53:30,657 INFO    HandlerThread:2992137 [system_monitor.py:probe():214] Publishing system info
+2023-09-07 14:53:30,657 DEBUG   HandlerThread:2992137 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-09-07 14:53:30,658 DEBUG   HandlerThread:2992137 [system_info.py:_save_pip():67] Saving pip packages done
+2023-09-07 14:53:30,658 DEBUG   HandlerThread:2992137 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-09-07 14:53:31,192 INFO    Thread-12 :2992137 [dir_watcher.py:_on_file_created():272] file/dir created: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230907_145326-3k0ehbm0/files/conda-environment.yaml
+2023-09-07 14:53:31,193 INFO    Thread-12 :2992137 [dir_watcher.py:_on_file_created():272] file/dir created: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230907_145326-3k0ehbm0/files/requirements.txt
+2023-09-07 14:53:33,533 DEBUG   HandlerThread:2992137 [system_info.py:_save_conda():86] Saving conda packages done
+2023-09-07 14:53:33,538 INFO    HandlerThread:2992137 [system_monitor.py:probe():216] Finished publishing system info
+2023-09-07 14:53:33,547 DEBUG   HandlerThread:2992137 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 14:53:33,547 DEBUG   HandlerThread:2992137 [handler.py:handle_request():144] handle_request: poll_exit
+2023-09-07 14:53:33,549 DEBUG   SenderThread:2992137 [sender.py:send():369] send: exit
+2023-09-07 14:53:33,549 INFO    SenderThread:2992137 [sender.py:send_exit():574] handling exit code: 255
+2023-09-07 14:53:33,550 INFO    SenderThread:2992137 [sender.py:send_exit():576] handling runtime: 2
+2023-09-07 14:53:33,556 INFO    SenderThread:2992137 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-09-07 14:53:33,556 INFO    SenderThread:2992137 [sender.py:send_exit():582] send defer
+2023-09-07 14:53:33,557 DEBUG   SenderThread:2992137 [sender.py:send_request():396] send_request: poll_exit
+2023-09-07 14:53:33,557 DEBUG   SenderThread:2992137 [sender.py:send():369] send: files
+2023-09-07 14:53:33,557 INFO    SenderThread:2992137 [sender.py:_save_file():1354] saving file wandb-metadata.json with policy now
+2023-09-07 14:53:33,558 DEBUG   HandlerThread:2992137 [handler.py:handle_request():144] handle_request: defer
+2023-09-07 14:53:33,558 INFO    HandlerThread:2992137 [handler.py:handle_request_defer():170] handle defer: 0
+2023-09-07 14:53:33,559 DEBUG   SenderThread:2992137 [sender.py:send_request():396] send_request: defer
+2023-09-07 14:53:33,559 INFO    SenderThread:2992137 [sender.py:send_request_defer():598] handle sender defer: 0
+2023-09-07 14:53:33,560 INFO    SenderThread:2992137 [sender.py:transition_state():602] send defer: 1
+2023-09-07 14:53:33,560 DEBUG   HandlerThread:2992137 [handler.py:handle_request():144] handle_request: defer
+2023-09-07 14:53:33,560 INFO    HandlerThread:2992137 [handler.py:handle_request_defer():170] handle defer: 1
+2023-09-07 14:53:33,561 DEBUG   SenderThread:2992137 [sender.py:send_request():396] send_request: defer
+2023-09-07 14:53:33,561 INFO    SenderThread:2992137 [sender.py:send_request_defer():598] handle sender defer: 1
+2023-09-07 14:53:33,561 INFO    SenderThread:2992137 [sender.py:transition_state():602] send defer: 2
+2023-09-07 14:53:33,561 DEBUG   HandlerThread:2992137 [handler.py:handle_request():144] handle_request: defer
+2023-09-07 14:53:33,561 INFO    HandlerThread:2992137 [handler.py:handle_request_defer():170] handle defer: 2
+2023-09-07 14:53:33,561 INFO    HandlerThread:2992137 [system_monitor.py:finish():190] Stopping system monitor
+2023-09-07 14:53:33,562 DEBUG   SystemMonitor:2992137 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-09-07 14:53:33,563 INFO    HandlerThread:2992137 [interfaces.py:finish():202] Joined cpu monitor
+2023-09-07 14:53:33,564 DEBUG   SystemMonitor:2992137 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-09-07 14:53:33,565 INFO    HandlerThread:2992137 [interfaces.py:finish():202] Joined disk monitor
+2023-09-07 14:53:33,565 DEBUG   SystemMonitor:2992137 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-09-07 14:53:33,582 INFO    HandlerThread:2992137 [interfaces.py:finish():202] Joined gpu monitor
+2023-09-07 14:53:33,583 INFO    HandlerThread:2992137 [interfaces.py:finish():202] Joined memory monitor
+2023-09-07 14:53:33,583 INFO    HandlerThread:2992137 [interfaces.py:finish():202] Joined network monitor
+2023-09-07 14:53:33,584 DEBUG   SenderThread:2992137 [sender.py:send_request():396] send_request: defer
+2023-09-07 14:53:33,584 INFO    SenderThread:2992137 [sender.py:send_request_defer():598] handle sender defer: 2
+2023-09-07 14:53:33,584 INFO    SenderThread:2992137 [sender.py:transition_state():602] send defer: 3
+2023-09-07 14:53:33,585 DEBUG   SenderThread:2992137 [sender.py:send():369] send: stats
+2023-09-07 14:53:33,586 DEBUG   HandlerThread:2992137 [handler.py:handle_request():144] handle_request: defer
+2023-09-07 14:53:33,586 INFO    HandlerThread:2992137 [handler.py:handle_request_defer():170] handle defer: 3
+2023-09-07 14:53:33,587 DEBUG   SenderThread:2992137 [sender.py:send_request():396] send_request: defer
+2023-09-07 14:53:33,587 INFO    SenderThread:2992137 [sender.py:send_request_defer():598] handle sender defer: 3
+2023-09-07 14:53:33,587 INFO    SenderThread:2992137 [sender.py:transition_state():602] send defer: 4
+2023-09-07 14:53:33,588 DEBUG   HandlerThread:2992137 [handler.py:handle_request():144] handle_request: defer
+2023-09-07 14:53:33,588 INFO    HandlerThread:2992137 [handler.py:handle_request_defer():170] handle defer: 4
+2023-09-07 14:53:33,588 DEBUG   SenderThread:2992137 [sender.py:send_request():396] send_request: defer
+2023-09-07 14:53:33,588 INFO    SenderThread:2992137 [sender.py:send_request_defer():598] handle sender defer: 4
+2023-09-07 14:53:33,588 INFO    SenderThread:2992137 [sender.py:transition_state():602] send defer: 5
+2023-09-07 14:53:33,589 DEBUG   HandlerThread:2992137 [handler.py:handle_request():144] handle_request: defer
+2023-09-07 14:53:33,589 INFO    HandlerThread:2992137 [handler.py:handle_request_defer():170] handle defer: 5
+2023-09-07 14:53:33,590 DEBUG   SenderThread:2992137 [sender.py:send():369] send: summary
+2023-09-07 14:53:33,591 INFO    SenderThread:2992137 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-09-07 14:53:33,592 DEBUG   SenderThread:2992137 [sender.py:send_request():396] send_request: defer
+2023-09-07 14:53:33,592 INFO    SenderThread:2992137 [sender.py:send_request_defer():598] handle sender defer: 5
+2023-09-07 14:53:33,592 INFO    SenderThread:2992137 [sender.py:transition_state():602] send defer: 6
+2023-09-07 14:53:33,592 DEBUG   HandlerThread:2992137 [handler.py:handle_request():144] handle_request: defer
+2023-09-07 14:53:33,593 INFO    HandlerThread:2992137 [handler.py:handle_request_defer():170] handle defer: 6
+2023-09-07 14:53:33,593 DEBUG   SenderThread:2992137 [sender.py:send_request():396] send_request: defer
+2023-09-07 14:53:33,593 INFO    SenderThread:2992137 [sender.py:send_request_defer():598] handle sender defer: 6
+2023-09-07 14:53:33,593 INFO    SenderThread:2992137 [sender.py:transition_state():602] send defer: 7
+2023-09-07 14:53:33,594 DEBUG   HandlerThread:2992137 [handler.py:handle_request():144] handle_request: status_report
+2023-09-07 14:53:33,594 DEBUG   HandlerThread:2992137 [handler.py:handle_request():144] handle_request: defer
+2023-09-07 14:53:33,594 INFO    HandlerThread:2992137 [handler.py:handle_request_defer():170] handle defer: 7
+2023-09-07 14:53:33,595 DEBUG   SenderThread:2992137 [sender.py:send_request():396] send_request: defer
+2023-09-07 14:53:33,595 INFO    SenderThread:2992137 [sender.py:send_request_defer():598] handle sender defer: 7
+2023-09-07 14:53:33,595 INFO    SenderThread:2992137 [sender.py:transition_state():602] send defer: 8
+2023-09-07 14:53:33,595 DEBUG   HandlerThread:2992137 [handler.py:handle_request():144] handle_request: defer
+2023-09-07 14:53:33,595 INFO    HandlerThread:2992137 [handler.py:handle_request_defer():170] handle defer: 8
+2023-09-07 14:53:33,596 DEBUG   SenderThread:2992137 [sender.py:send_request():396] send_request: defer
+2023-09-07 14:53:33,596 INFO    SenderThread:2992137 [sender.py:send_request_defer():598] handle sender defer: 8
+2023-09-07 14:53:33,596 INFO    SenderThread:2992137 [job_builder.py:build():232] Attempting to build job artifact
+2023-09-07 14:53:33,596 INFO    SenderThread:2992137 [job_builder.py:build():256] is repo sourced job
+2023-09-07 14:53:33,600 INFO    SenderThread:2992137 [job_builder.py:build():297] adding wandb-job metadata file
+2023-09-07 14:53:33,608 INFO    SenderThread:2992137 [sender.py:transition_state():602] send defer: 9
+2023-09-07 14:53:33,608 DEBUG   HandlerThread:2992137 [handler.py:handle_request():144] handle_request: defer
+2023-09-07 14:53:33,609 INFO    HandlerThread:2992137 [handler.py:handle_request_defer():170] handle defer: 9
+2023-09-07 14:53:33,609 DEBUG   SenderThread:2992137 [sender.py:send():369] send: artifact
+2023-09-07 14:53:34,061 DEBUG   HandlerThread:2992137 [handler.py:handle_request():144] handle_request: poll_exit
+2023-09-07 14:53:34,196 INFO    Thread-12 :2992137 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230907_145326-3k0ehbm0/files/conda-environment.yaml
+2023-09-07 14:53:34,196 INFO    Thread-12 :2992137 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230907_145326-3k0ehbm0/files/wandb-summary.json
+2023-09-07 14:53:34,197 INFO    Thread-12 :2992137 [dir_watcher.py:_on_file_created():272] file/dir created: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230907_145326-3k0ehbm0/files/wandb-metadata.json
+2023-09-07 14:53:35,736 WARNING StreamThr :2992137 [internal.py:is_dead():414] Internal process exiting, parent pid 2992021 disappeared
+2023-09-07 14:53:35,736 ERROR   StreamThr :2992137 [internal.py:wandb_internal():152] Internal process shutdown.
+2023-09-07 14:53:36,062 INFO    HandlerThread:2992137 [handler.py:finish():854] shutting down handler
+2023-09-07 14:53:36,063 INFO    WriterThread:2992137 [datastore.py:close():298] close: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230907_145326-3k0ehbm0/run-3k0ehbm0.wandb
+2023-09-07 14:53:37,305 INFO    wandb-upload_1:2992137 [upload_job.py:push():88] Skipped uploading /home/yxdong/.local/share/wandb/artifacts/staging/tmpfs6p6cgy
+2023-09-07 14:53:37,707 INFO    wandb-upload_2:2992137 [upload_job.py:push():91] Uploaded file /home/yxdong/.local/share/wandb/artifacts/staging/tmpzoycc49x
+2023-09-07 14:53:39,694 INFO    SenderThread:2992137 [sender.py:send_artifact():1450] sent artifact job-git_github.com_kkkjj-d_nanoGPT-eva.git_train.py - {'id': 'QXJ0aWZhY3Q6NTYxNjIzMzM0', 'digest': '0ddf311e40ed4baeb5b50e044b73eee6', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjkyMjU3Njkx', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NTQ5NTMwNDI1', 'versionIndex': 2}}, 'version': 'latest'}
+2023-09-07 14:53:39,694 INFO    SenderThread:2992137 [sender.py:finish():1526] shutting down sender
+2023-09-07 14:53:39,694 INFO    SenderThread:2992137 [dir_watcher.py:finish():359] shutting down directory watcher
+2023-09-07 14:53:40,200 INFO    SenderThread:2992137 [dir_watcher.py:finish():389] scan: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230907_145326-3k0ehbm0/files
+2023-09-07 14:53:40,201 INFO    SenderThread:2992137 [dir_watcher.py:finish():403] scan save: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230907_145326-3k0ehbm0/files/config.yaml config.yaml
+2023-09-07 14:53:40,201 INFO    SenderThread:2992137 [dir_watcher.py:finish():403] scan save: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230907_145326-3k0ehbm0/files/wandb-summary.json wandb-summary.json
+2023-09-07 14:53:40,202 INFO    SenderThread:2992137 [dir_watcher.py:finish():403] scan save: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230907_145326-3k0ehbm0/files/requirements.txt requirements.txt
+2023-09-07 14:53:40,218 INFO    SenderThread:2992137 [dir_watcher.py:finish():403] scan save: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230907_145326-3k0ehbm0/files/conda-environment.yaml conda-environment.yaml
+2023-09-07 14:53:40,220 INFO    SenderThread:2992137 [dir_watcher.py:finish():403] scan save: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230907_145326-3k0ehbm0/files/wandb-metadata.json wandb-metadata.json
+2023-09-07 14:53:40,220 INFO    SenderThread:2992137 [file_pusher.py:finish():159] shutting down file pusher
+2023-09-07 14:53:40,221 INFO    SenderThread:2992137 [file_pusher.py:join():164] waiting for file pusher
+2023-09-07 14:53:40,874 INFO    wandb-upload_2:2992137 [upload_job.py:push():133] Uploaded file /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230907_145326-3k0ehbm0/files/wandb-summary.json
+2023-09-07 14:53:41,143 INFO    wandb-upload_1:2992137 [upload_job.py:push():133] Uploaded file /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230907_145326-3k0ehbm0/files/config.yaml
+2023-09-07 14:53:42,371 INFO    wandb-upload_3:2992137 [upload_job.py:push():133] Uploaded file /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230907_145326-3k0ehbm0/files/requirements.txt
+2023-09-07 14:53:42,686 INFO    wandb-upload_4:2992137 [upload_job.py:push():133] Uploaded file /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230907_145326-3k0ehbm0/files/conda-environment.yaml

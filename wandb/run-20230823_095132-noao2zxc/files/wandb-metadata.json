@@ -1,0 +1,261 @@
+{
+    "os": "Linux-5.4.0-156-generic-x86_64-with-glibc2.10",
+    "python": "3.8.0",
+    "heartbeatAt": "2023-08-23T09:51:34.983021",
+    "startedAt": "2023-08-23T09:51:32.705847",
+    "docker": null,
+    "cuda": "10.2.89",
+    "args": [
+        "config/train_gpt2.py",
+        "--optim=eva",
+        "--eva_lr=0.01"
+    ],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "git@github.com:kkkjj-d/nanoGPT-eva.git",
+        "commit": "eba36e84649f3c6d840a93092cb779a260544d08"
+    },
+    "email": "1262670315@qq.com",
+    "root": "/home/yxdong/nano-gpt-test/nanoGPT-eva",
+    "host": "gpu1",
+    "username": "yxdong",
+    "executable": "/home/yxdong/anaconda3/envs/dyx-py38/bin/python",
+    "cpu_count": 20,
+    "cpu_count_logical": 40,
+    "cpu_freq": {
+        "current": 1407.039925,
+        "min": 1000.0,
+        "max": 3200.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1000.194,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1200.039,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 3005.135,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1001.091,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1000.116,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1000.425,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1001.26,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2398.993,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1000.314,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1217.845,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1000.368,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1000.512,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 999.655,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1000.554,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1401.637,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1000.542,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1000.118,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1000.414,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2800.418,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2801.285,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1001.006,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1185.895,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2799.189,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1000.055,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1000.608,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1001.286,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1000.003,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1748.973,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1000.306,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1110.407,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1000.68,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 999.995,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1000.145,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1000.398,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1149.057,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1000.911,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1000.584,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1000.188,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 3105.192,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 3105.19,
+            "min": 1000.0,
+            "max": 3200.0
+        }
+    ],
+    "disk": {
+        "total": 686.5967483520508,
+        "used": 166.6161651611328
+    },
+    "gpu": "NVIDIA GeForce RTX 2080 Ti",
+    "gpu_count": 4,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 2080 Ti",
+            "memory_total": 11811160064
+        },
+        {
+            "name": "NVIDIA GeForce RTX 2080 Ti",
+            "memory_total": 11811160064
+        },
+        {
+            "name": "NVIDIA GeForce RTX 2080 Ti",
+            "memory_total": 11811160064
+        },
+        {
+            "name": "NVIDIA GeForce RTX 2080 Ti",
+            "memory_total": 11811160064
+        }
+    ],
+    "memory": {
+        "total": 503.5459175109863
+    }
+}

@@ -1,0 +1,21 @@
+
+step 0: train loss 10.9873, val loss 10.9915
+iter 0: loss 11.0254, time 22529.35ms, mfu -100.00%
+iter 10: loss 10.9741, time 6900.73ms, mfu 4.88%
+iter 20: loss 10.8278, time 6991.71ms, mfu 4.87%
+iter 30: loss 10.6751, time 7041.52ms, mfu 4.86%
+iter 40: loss 10.4407, time 7047.21ms, mfu 4.85%
+iter 50: loss 10.2656, time 7045.65ms, mfu 4.85%
+iter 60: loss 10.0257, time 7045.04ms, mfu 4.84%
+iter 70: loss 9.9738, time 7057.88ms, mfu 4.83%
+iter 80: loss 9.8334, time 7039.65ms, mfu 4.83%
+Traceback (most recent call last):
+  File "train.py", line 393, in <module>
+    scaler.step(optimizer)
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py", line 338, in step
+    retval = self._maybe_opt_step(optimizer, optimizer_state, *args, **kwargs)
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py", line 284, in _maybe_opt_step
+    if not sum(v.item() for v in optimizer_state["found_inf_per_device"].values()):
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py", line 284, in <genexpr>
+    if not sum(v.item() for v in optimizer_state["found_inf_per_device"].values()):
+KeyboardInterrupt

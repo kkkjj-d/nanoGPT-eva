@@ -29,6 +29,10 @@ from torch.distributed import init_process_group, destroy_process_group
 
 from model import GPTConfig, GPT
 
+from torch.optim.lr_scheduler import LambdaLR
+from eva import KFAC
+# import argparse
+
 # -----------------------------------------------------------------------------
 # default config values designed to train a gpt2 (124M) on OpenWebText
 # I/O
@@ -71,12 +75,24 @@ backend = 'nccl' # 'nccl', 'gloo', etc.
 # system
 device = 'cuda' # examples: 'cpu', 'cuda', 'cuda:0', 'cuda:1' etc., or try 'mps' on macbooks
 dtype = 'bfloat16' if torch.cuda.is_available() and torch.cuda.is_bf16_supported() else 'float16' # 'float32', 'bfloat16', or 'float16', the latter will auto implement a GradScaler
-compile = True # use PyTorch 2.0 to compile the model to be faster
+compile = False # use PyTorch 2.0 to compile the model to be faster
+
+stop = False
+stop_iter = 10000
+
+#eva settings
+optim = 'adam'
+eva_lr = 0.001
+eva_kl_clip = 0.0001
+eva_damping = 0.03
+lr_s = 'linear'
+
 # -----------------------------------------------------------------------------
 config_keys = [k for k,v in globals().items() if not k.startswith('_') and isinstance(v, (int, float, bool, str))]
 exec(open('configurator.py').read()) # overrides from command line or config file
 config = {k: globals()[k] for k in config_keys} # will be useful for logging
 # -----------------------------------------------------------------------------
+wandb_run_name  = wandb_run_name + ' ' + optim + ' ' + str(eva_lr) + ' ' + str(eva_kl_clip) + ' ' + str(eva_damping) + ' ' + lr_s + str(warmup_iters)
 
 # various inits, derived attributes, I/O setup
 ddp = int(os.environ.get('RANK', -1)) != -1 # is this a ddp run?
@@ -193,9 +209,10 @@ model.to(device)
 scaler = torch.cuda.amp.GradScaler(enabled=(dtype == 'float16'))
 
 # optimizer
-optimizer = model.configure_optimizers(weight_decay, learning_rate, (beta1, beta2), device_type)
-if init_from == 'resume':
-    optimizer.load_state_dict(checkpoint['optimizer'])
+if optim != 'eva':
+    optimizer = model.configure_optimizers(weight_decay, learning_rate, (beta1, beta2), device_type)
+    if init_from == 'resume':
+        optimizer.load_state_dict(checkpoint['optimizer'])
 checkpoint = None # free up memory
 
 # compile the model
@@ -207,6 +224,17 @@ if compile:
 # wrap model into DDP container
 if ddp:
     model = DDP(model, device_ids=[ddp_local_rank])
+    if optim == 'eva':
+        # optimizer = torch.optim.SGD(model.parameters(),eva_lr)
+        # preconditioner = KFAC(model,
+        #                       lr=eva_lr,
+        #                       damping=eva_damping,
+        #                       kl_clip=eva_kl_clip)
+        
+        optimizer = KFAC(model,
+                        lr=eva_lr,
+                        damping=eva_damping,
+                        kl_clip=eva_kl_clip)
 
 # helps estimate an arbitrarily accurate loss over either split using many batches
 @torch.no_grad()
@@ -238,6 +266,57 @@ def get_lr(it):
     coeff = 0.5 * (1.0 + math.cos(math.pi * decay_ratio)) # coeff ranges 0..1
     return min_lr + coeff * (learning_rate - min_lr)
 
+
+'''
+create schedulers when using EVA-optimizer
+'''
+def create_polynomial_lr_schedule(lr_init, num_warmup_steps, num_training_steps, lr_end=0.0, power=1.0):
+    def lr_schedule(current_step: int):
+        if current_step < num_warmup_steps:
+            return float(current_step) / float(max(1, num_warmup_steps))
+        elif current_step > num_training_steps:
+            return lr_end / lr_init
+        else:
+            lr_range = lr_init - lr_end
+            decay_steps = num_training_steps - num_warmup_steps
+            pct_remaining = 1 - (current_step - num_warmup_steps) / decay_steps
+            decay = lr_range * pct_remaining**power + lr_end
+            return decay / lr_init
+    return lr_schedule
+
+def create_cosine_lr_schedule(num_warmup_steps, num_training_steps, num_cycles=0.5):
+    def lr_schedule(current_step: int):
+        if current_step < num_warmup_steps:
+            return float(current_step) / float(max(1, num_warmup_steps))
+        progress = float(current_step - num_warmup_steps) / float(max(1, num_training_steps - num_warmup_steps))
+        return max(0.0, 0.5 * (1.0 + math.cos(math.pi * float(num_cycles) * 2.0 * progress)))
+    return lr_schedule
+
+def create_multi_step_lr_schedule(workers, warmup_epochs, decay_schedule, alpha=0.1):
+    def lr_schedule(epoch):
+        lr_adj = 1.
+        if epoch < warmup_epochs:
+            lr_adj = 1. / workers * (epoch * (workers - 1) / warmup_epochs + 1)
+        else:
+            decay_schedule.sort(reverse=True)
+            for e in decay_schedule:
+                if epoch >= e:
+                    lr_adj *= alpha
+        return lr_adj
+    return lr_schedule
+
+if optim == 'eva':
+    if lr_s == 'linear':
+        lrs = create_polynomial_lr_schedule(eva_lr,warmup_iters,max_iters)
+    elif lr_s == 'cos':
+        lrs = create_cosine_lr_schedule(warmup_iters,max_iters)
+    elif lr_s == 'multi':
+        decay_list = np.arange(warmup_iters,max_iters,400)
+        decay_list = decay_list.tolist()
+        lrs = create_multi_step_lr_schedule(4,warmup_iters,decay_list,0.99)
+    # lr_schedulers = [LambdaLR(optimizer,lrs),LambdaLR(preconditioner,lrs)]
+    lr_schedulers = [LambdaLR(optimizer,lrs)]
+
 # logging
 if wandb_log and master_process:
     import wandb
@@ -252,9 +331,15 @@ running_mfu = -1.0
 while True:
 
     # determine and set the learning rate for this iteration
-    lr = get_lr(iter_num) if decay_lr else learning_rate
-    for param_group in optimizer.param_groups:
-        param_group['lr'] = lr
+    if optim != 'eva':
+        lr = get_lr(iter_num) if decay_lr else learning_rate
+        for param_group in optimizer.param_groups:
+            param_group['lr'] = lr
+    else:
+        for param_group in optimizer.param_groups:
+            lr = param_group['lr']
+            break
+
 
     # evaluate the loss on train/val sets and write checkpoints
     if iter_num % eval_interval == 0 and master_process:
@@ -307,6 +392,10 @@ while True:
     # step the optimizer and scaler if training in fp16
     scaler.step(optimizer)
     scaler.update()
+    if optim == 'eva':
+        for single_lrs in lr_schedulers:
+            single_lrs.step()
+
     # flush the gradients as soon as we can, no need for this memory anymore
     optimizer.zero_grad(set_to_none=True)
 
@@ -322,11 +411,24 @@ while True:
             mfu = raw_model.estimate_mfu(batch_size * gradient_accumulation_steps, dt)
             running_mfu = mfu if running_mfu == -1.0 else 0.9*running_mfu + 0.1*mfu
         print(f"iter {iter_num}: loss {lossf:.4f}, time {dt*1000:.2f}ms, mfu {running_mfu*100:.2f}%")
+
+        if wandb_log:
+            wandb.log({
+                "iter": iter_num,
+                "train/loss": lossf,
+                # "val/loss": losses['val'],
+                "lr": lr,
+                "mfu": running_mfu*100, # convert to percentage
+            })
+
     iter_num += 1
     local_iter_num += 1
 
     # termination conditions
     if iter_num > max_iters:
+        break
+
+    if stop == True and iter_num > stop_iter:
         break
 
 if ddp:

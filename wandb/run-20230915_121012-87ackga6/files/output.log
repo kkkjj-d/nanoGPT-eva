@@ -1,0 +1,22 @@
+
+step 0: train loss 10.9873, val loss 10.9915
+Traceback (most recent call last):
+  File "train.py", line 393, in <module>
+    scaler.step(optimizer)
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py", line 338, in step
+    retval = self._maybe_opt_step(optimizer, optimizer_state, *args, **kwargs)
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py", line 285, in _maybe_opt_step
+    retval = optimizer.step(*args, **kwargs)
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/optim/lr_scheduler.py", line 65, in wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/optim/optimizer.py", line 113, in wrapper
+    return func(*args, **kwargs)
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/autograd/grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/yxdong/nano-gpt-test/nanoGPT-eva/eva.py", line 249, in step
+    self._precondition_grads()
+  File "/home/yxdong/nano-gpt-test/nanoGPT-eva/eva.py", line 147, in _precondition_grads
+    grad = self._get_grad(module)
+  File "/home/yxdong/nano-gpt-test/nanoGPT-eva/eva.py", line 223, in _get_grad
+    max_values, = torch.topk(grad.view(-1),k=20)
+ValueError: too many values to unpack (expected 1)

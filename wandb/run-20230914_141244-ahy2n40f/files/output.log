@@ -1,0 +1,15 @@
+
+step 0: train loss 10.9873, val loss 10.9915
+iter 0: loss 11.0254, time 22470.81ms, mfu -100.00%
+iter 10: loss 10.9741, time 6902.63ms, mfu 4.88%
+iter 20: loss 10.8273, time 6909.72ms, mfu 4.88%
+iter 30: loss 10.6682, time 6936.89ms, mfu 4.87%
+iter 40: loss 10.4027, time 6980.36ms, mfu 4.87%
+Traceback (most recent call last):
+  File "train.py", line 387, in <module>
+    scaler.scale(loss).backward()
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/_tensor.py", line 396, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/autograd/__init__.py", line 173, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

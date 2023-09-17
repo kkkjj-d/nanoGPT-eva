@@ -1,0 +1,80 @@
+
+step 0: train loss 10.9873, val loss 10.9915
+iter 0: loss 11.0254, time 23006.97ms, mfu -100.00%
+/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:131: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+iter 10: loss 9.6151, time 6411.03ms, mfu 5.25%
+iter 20: loss 9.0222, time 6423.24ms, mfu 5.25%
+iter 30: loss 9.0400, time 6426.84ms, mfu 5.25%
+iter 40: loss 8.7269, time 6489.08ms, mfu 5.24%
+iter 50: loss 8.5047, time 6424.25ms, mfu 5.24%
+iter 60: loss 8.4942, time 6426.51ms, mfu 5.24%
+iter 70: loss 8.5057, time 6518.69ms, mfu 5.23%
+iter 80: loss 8.4707, time 6429.74ms, mfu 5.23%
+iter 90: loss 9.2555, time 6433.81ms, mfu 5.23%
+iter 100: loss 9.0427, time 6593.13ms, mfu 5.22%
+iter 110: loss 10.2915, time 6589.45ms, mfu 5.21%
+iter 120: loss 8.7211, time 6429.89ms, mfu 5.21%
+iter 130: loss 8.8338, time 6431.40ms, mfu 5.21%
+iter 140: loss 8.4346, time 6432.47ms, mfu 5.22%
+iter 150: loss 8.1505, time 6432.10ms, mfu 5.22%
+iter 160: loss 8.3547, time 6434.50ms, mfu 5.22%
+iter 170: loss 7.9877, time 6447.73ms, mfu 5.22%
+iter 180: loss 7.9628, time 6446.75ms, mfu 5.22%
+iter 190: loss 7.6611, time 6447.29ms, mfu 5.22%
+iter 200: loss 8.0012, time 6445.45ms, mfu 5.22%
+iter 210: loss 8.2716, time 6442.75ms, mfu 5.22%
+iter 220: loss 7.8866, time 6445.88ms, mfu 5.22%
+iter 230: loss 7.4107, time 6803.64ms, mfu 5.19%
+iter 240: loss 7.5157, time 6446.63ms, mfu 5.20%
+iter 250: loss 8.3473, time 6447.64ms, mfu 5.20%
+iter 260: loss 8.2759, time 6444.79ms, mfu 5.20%
+iter 270: loss 7.4335, time 6445.73ms, mfu 5.20%
+iter 280: loss 7.8797, time 6444.43ms, mfu 5.21%
+iter 290: loss 7.7691, time 6448.51ms, mfu 5.21%
+iter 300: loss 7.5664, time 6448.31ms, mfu 5.21%
+iter 310: loss 7.5530, time 6445.28ms, mfu 5.21%
+iter 320: loss 6.8882, time 6450.00ms, mfu 5.21%
+iter 330: loss 7.2858, time 6961.00ms, mfu 5.17%
+iter 340: loss 8.3367, time 6449.00ms, mfu 5.18%
+iter 350: loss 7.3825, time 6451.55ms, mfu 5.18%
+iter 360: loss 7.6259, time 6450.38ms, mfu 5.19%
+iter 370: loss 7.3833, time 6452.18ms, mfu 5.19%
+iter 380: loss 7.0705, time 7025.51ms, mfu 5.15%
+iter 390: loss 7.9336, time 6447.82ms, mfu 5.16%
+iter 400: loss 7.3594, time 6446.22ms, mfu 5.16%
+iter 410: loss 7.7249, time 6446.96ms, mfu 5.17%
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/linecache.py", line 47, in getlines
+    return updatecache(filename, module_globals)
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/linecache.py", line 95, in updatecache
+    stat = os.stat(fullname)
+KeyboardInterrupt
+Original exception was:
+Traceback (most recent call last):
+  File "train.py", line 376, in <module>
+    logits, loss = model(X, Y)
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1008, in forward
+    output = self._run_ddp_forward(*inputs, **kwargs)
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 969, in _run_ddp_forward
+    return module_to_run(*inputs[0], **kwargs[0])
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/yxdong/nano-gpt-test/nanoGPT-eva/model.py", line 181, in forward
+    x = block(x)
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/yxdong/nano-gpt-test/nanoGPT-eva/model.py", line 104, in forward
+    x = x + self.attn(self.ln_1(x))
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/yxdong/nano-gpt-test/nanoGPT-eva/model.py", line 75, in forward
+    y = self.resid_dropout(self.c_proj(y))
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1137, in _call_impl
+    result = hook(self, input)
+  File "/home/yxdong/nano-gpt-test/nanoGPT-eva/eva.py", line 93, in _forward_hook_event
+    self.m_a[module].mul_(1-self.factor_decay).add_(new, alpha=self.factor_decay)
+KeyboardInterrupt

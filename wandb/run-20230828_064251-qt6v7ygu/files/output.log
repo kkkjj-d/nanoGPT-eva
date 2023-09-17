@@ -1,0 +1,25 @@
+step 0: train loss 10.9873, val loss 10.9915
+iter 0: loss 10.9988, time 17178.35ms, mfu -100.00%
+/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:131: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+iter 10: loss 9.3312, time 642.15ms, mfu 4.37%
+iter 20: loss 9.0838, time 643.34ms, mfu 4.37%
+iter 30: loss 8.5819, time 644.22ms, mfu 4.37%
+iter 40: loss 8.7113, time 644.14ms, mfu 4.37%
+iter 50: loss 9.2012, time 644.59ms, mfu 4.36%
+iter 60: loss 9.3800, time 645.16ms, mfu 4.36%
+iter 70: loss 8.7173, time 645.56ms, mfu 4.36%
+iter 80: loss 8.6663, time 646.89ms, mfu 4.36%
+iter 90: loss 8.4899, time 646.54ms, mfu 4.36%
+Traceback (most recent call last):
+  File "train.py", line 387, in <module>
+    single_lrs.step()
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/optim/lr_scheduler.py", line 154, in step
+    values = self.get_lr()
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/optim/lr_scheduler.py", line 252, in get_lr
+    return [base_lr * lmbda(self.last_epoch)
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/optim/lr_scheduler.py", line 252, in <listcomp>
+    return [base_lr * lmbda(self.last_epoch)
+  File "train.py", line 293, in lr_schedule
+    decay_schedule.sort(reverse=True)
+TypeError: sort() got an unexpected keyword argument 'reverse'

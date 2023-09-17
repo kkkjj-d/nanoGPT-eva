@@ -1,0 +1,28 @@
+2023-08-24 10:30:34,389 INFO    MainThread:948310 [wandb_setup.py:_flush():76] Current SDK version is 0.15.4
+2023-08-24 10:30:34,389 INFO    MainThread:948310 [wandb_setup.py:_flush():76] Configure stats pid to 948310
+2023-08-24 10:30:34,389 INFO    MainThread:948310 [wandb_setup.py:_flush():76] Loading settings from /home/yxdong/.config/wandb/settings
+2023-08-24 10:30:34,390 INFO    MainThread:948310 [wandb_setup.py:_flush():76] Loading settings from /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/settings
+2023-08-24 10:30:34,390 INFO    MainThread:948310 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-08-24 10:30:34,390 INFO    MainThread:948310 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-08-24 10:30:34,390 INFO    MainThread:948310 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train.py', 'program': 'train.py'}
+2023-08-24 10:30:34,390 INFO    MainThread:948310 [wandb_init.py:_log_setup():507] Logging user logs to /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230824_103034-n4xqaa8j/logs/debug.log
+2023-08-24 10:30:34,390 INFO    MainThread:948310 [wandb_init.py:_log_setup():508] Logging internal logs to /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230824_103034-n4xqaa8j/logs/debug-internal.log
+2023-08-24 10:30:34,391 INFO    MainThread:948310 [wandb_init.py:init():547] calling init triggers
+2023-08-24 10:30:34,391 INFO    MainThread:948310 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {'out_dir': 'out', 'eval_interval': 500, 'log_interval': 10, 'eval_iters': 200, 'eval_only': False, 'always_save_checkpoint': True, 'init_from': 'scratch', 'wandb_log': True, 'wandb_project': 'owt', 'wandb_run_name': 'gpt2-124M', 'dataset': 'openwebtext', 'gradient_accumulation_steps': 20, 'batch_size': 2, 'block_size': 1024, 'n_layer': 12, 'n_head': 12, 'n_embd': 768, 'dropout': 0.0, 'bias': False, 'learning_rate': 0.0006, 'max_iters': 40000, 'weight_decay': 0.1, 'beta1': 0.9, 'beta2': 0.95, 'grad_clip': 1.0, 'decay_lr': True, 'warmup_iters': 300, 'lr_decay_iters': 40000, 'min_lr': 6e-05, 'backend': 'nccl', 'device': 'cuda', 'dtype': 'float16', 'compile': False, 'optim': 'eva', 'eva_lr': 0.8, 'eva_kl_clip': 0.0001, 'eva_damping': 0.03, 'lr_s': 'cos'}
+2023-08-24 10:30:34,391 INFO    MainThread:948310 [wandb_init.py:init():596] starting backend
+2023-08-24 10:30:34,391 INFO    MainThread:948310 [wandb_init.py:init():600] setting up manager
+2023-08-24 10:30:34,395 INFO    MainThread:948310 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-08-24 10:30:34,405 INFO    MainThread:948310 [wandb_init.py:init():606] backend started and connected
+2023-08-24 10:30:34,411 INFO    MainThread:948310 [wandb_init.py:init():703] updated telemetry
+2023-08-24 10:30:34,575 INFO    MainThread:948310 [wandb_init.py:init():736] communicating run to backend with 60.0 second timeout
+2023-08-24 10:30:35,759 INFO    MainThread:948310 [wandb_run.py:_on_init():2176] communicating current version
+2023-08-24 10:30:36,714 INFO    MainThread:948310 [wandb_run.py:_on_init():2185] got version response upgrade_message: "wandb version 0.15.8 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-08-24 10:30:36,714 INFO    MainThread:948310 [wandb_init.py:init():787] starting run threads in backend
+2023-08-24 10:30:39,757 INFO    MainThread:948310 [wandb_run.py:_console_start():2155] atexit reg
+2023-08-24 10:30:39,757 INFO    MainThread:948310 [wandb_run.py:_redirect():2010] redirect: SettingsConsole.WRAP_RAW
+2023-08-24 10:30:39,758 INFO    MainThread:948310 [wandb_run.py:_redirect():2075] Wrapping output streams.
+2023-08-24 10:30:39,758 INFO    MainThread:948310 [wandb_run.py:_redirect():2100] Redirects installed.
+2023-08-24 10:30:39,758 INFO    MainThread:948310 [wandb_init.py:init():828] run started, returning control to user process
+2023-08-24 18:27:01,241 WARNING MsgRouterThr:948310 [router.py:message_loop():77] message_loop has been closed

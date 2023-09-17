@@ -1,0 +1,390 @@
+
+step 0: train loss 10.9873, val loss 10.9915
+torch.return_types.topk(
+values=tensor([0.0006, 0.0005, 0.0005, 0.0004, 0.0004], device='cuda:0'),
+indices=tensor([1419884, 1419849, 1419271, 1376108, 1419551], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0021, 0.0020, 0.0019, 0.0019, 0.0019], device='cuda:0'),
+indices=tensor([577222, 515014, 450502, 555663, 584902], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0003, 0.0003, 0.0002, 0.0002, 0.0002], device='cuda:0'),
+indices=tensor([  22479, 1647203, 1848015,   22871, 1092707], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0025, 0.0025, 0.0024, 0.0024, 0.0023], device='cuda:0'),
+indices=tensor([1156912, 1178416, 1156794, 1178298, 2182960], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0006, 0.0006, 0.0006, 0.0006, 0.0005], device='cuda:0'),
+indices=tensor([1361182, 1361134, 1360964, 1361094, 1361483], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0032, 0.0032, 0.0032, 0.0032, 0.0031], device='cuda:0'),
+indices=tensor([545520, 244464, 547823, 289008, 315119], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0005, 0.0004, 0.0004, 0.0004, 0.0004], device='cuda:0'),
+indices=tensor([ 487554,  486990,  756354, 2260866,  755790], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0024, 0.0023, 0.0023, 0.0023, 0.0022], device='cuda:0'),
+indices=tensor([2334872, 2336961, 2336211,  978387, 2334769], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0006, 0.0006, 0.0006, 0.0006, 0.0006], device='cuda:0'),
+indices=tensor([1677535, 1677954, 1677452, 1677746, 1378379], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0030, 0.0029, 0.0029, 0.0027, 0.0026], device='cuda:0'),
+indices=tensor([105759, 244712, 186399, 294632, 244656], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0004, 0.0004, 0.0004, 0.0004, 0.0003], device='cuda:0'),
+indices=tensor([1849368,  731160, 1849858, 1592706,  731650], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0028, 0.0027, 0.0026, 0.0025, 0.0025], device='cuda:0'),
+indices=tensor([979388, 979321, 978017, 977066, 977506], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0005, 0.0005, 0.0005, 0.0005, 0.0004], device='cuda:0'),
+indices=tensor([1697204, 1696521, 1619721, 1620404, 1297844], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0025, 0.0025, 0.0023, 0.0023, 0.0023], device='cuda:0'),
+indices=tensor([294424, 220696, 294409, 244504, 186557], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0004, 0.0004, 0.0003, 0.0003, 0.0003], device='cuda:0'),
+indices=tensor([747524, 747972, 747765, 747783, 747325], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0024, 0.0024, 0.0020, 0.0020, 0.0019], device='cuda:0'),
+indices=tensor([ 883930,  883465, 1178377, 1178842,  978697], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0005, 0.0004, 0.0004, 0.0004, 0.0004], device='cuda:0'),
+indices=tensor([1387897, 1300484, 1504772, 1300743, 1300633], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0022, 0.0021, 0.0020, 0.0019, 0.0019], device='cuda:0'),
+indices=tensor([385113, 346713, 157785, 210009, 244313], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0003, 0.0003, 0.0003, 0.0003, 0.0003], device='cuda:0'),
+indices=tensor([2057593, 1531033, 1117849,  653689,  919417], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0019, 0.0017, 0.0017, 0.0016, 0.0016], device='cuda:0'),
+indices=tensor([1178811, 1178094,  982203,  980927, 1178254], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0005, 0.0004, 0.0004, 0.0004, 0.0004], device='cuda:0'),
+indices=tensor([1687588, 1580905, 1696036, 1283620, 1687960], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0024, 0.0023, 0.0021, 0.0021, 0.0021], device='cuda:0'),
+indices=tensor([335640, 190488,   5400, 155928, 474648], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0003, 0.0003, 0.0003, 0.0003, 0.0003], device='cuda:0'),
+indices=tensor([1517860,  673129, 2040100, 1517581, 1517974], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0016, 0.0016, 0.0016, 0.0015, 0.0015], device='cuda:0'),
+indices=tensor([624590, 762830, 876494, 163790, 626326], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0004, 0.0004, 0.0004, 0.0004, 0.0003], device='cuda:0'),
+indices=tensor([1214500, 1444900, 1637668, 1563801, 1564009], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0018, 0.0017, 0.0017, 0.0016, 0.0016], device='cuda:0'),
+indices=tensor([186251, 186402,   5802, 105611, 556458], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0004, 0.0004, 0.0003, 0.0003, 0.0003], device='cuda:0'),
+indices=tensor([860452, 999114, 998761, 998543, 998942], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0019, 0.0019, 0.0018, 0.0018, 0.0018], device='cuda:0'),
+indices=tensor([  22921, 2127241,  625033, 2128324,  764356], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0005, 0.0004, 0.0004, 0.0004, 0.0004], device='cuda:0'),
+indices=tensor([1662244, 1661965, 1339684, 1360420, 1400010], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0022, 0.0019, 0.0017, 0.0017, 0.0017], device='cuda:0'),
+indices=tensor([186215, 573287, 142439, 105575, 186486], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0003, 0.0003, 0.0003, 0.0003, 0.0003], device='cuda:0'),
+indices=tensor([759076, 867364, 758558, 759253, 867085], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0016, 0.0015, 0.0014, 0.0014, 0.0014], device='cuda:0'),
+indices=tensor([ 624620,  625006,  126956, 2225132, 1177580], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0004, 0.0004, 0.0003, 0.0003, 0.0003], device='cuda:0'),
+indices=tensor([1596446, 1596141, 1596491, 1276774, 1596265], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0015, 0.0015, 0.0015, 0.0015, 0.0015], device='cuda:0'),
+indices=tensor([244924, 573120, 573396, 156604, 573682], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0003, 0.0003, 0.0003, 0.0003, 0.0003], device='cuda:0'),
+indices=tensor([2077030, 2076964, 2077141, 2077151, 2076926], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0016, 0.0016, 0.0014, 0.0014, 0.0014], device='cuda:0'),
+indices=tensor([ 170868,  978804, 1178484, 2226036, 1070964], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0004, 0.0003, 0.0003, 0.0003, 0.0003], device='cuda:0'),
+indices=tensor([1518155, 1438283, 1760843, 1447499, 1587275], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0016, 0.0016, 0.0015, 0.0015, 0.0015], device='cuda:0'),
+indices=tensor([573499, 167995, 300091,  62011,  31291], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0003, 0.0003, 0.0003, 0.0003, 0.0003], device='cuda:0'),
+indices=tensor([ 232523,  520523, 1521995,  405323, 1644107], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0016, 0.0015, 0.0015, 0.0014, 0.0013], device='cuda:0'),
+indices=tensor([1179144, 1179172, 1178454, 1876488, 1177134], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0005, 0.0004, 0.0004, 0.0004, 0.0004], device='cuda:0'),
+indices=tensor([1729355, 1729464, 1729114, 1729177, 1729132], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0018, 0.0017, 0.0017, 0.0016, 0.0016], device='cuda:0'),
+indices=tensor([572928, 573364, 294585, 294510, 573188], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0003, 0.0003, 0.0003, 0.0003, 0.0003], device='cuda:0'),
+indices=tensor([2331467, 1608011, 1336139, 2331226, 2331229], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0014, 0.0013, 0.0013, 0.0013, 0.0013], device='cuda:0'),
+indices=tensor([1176809, 1178474, 1178308, 1178062, 1984745], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0003, 0.0003, 0.0003, 0.0003, 0.0002], device='cuda:0'),
+indices=tensor([1632587, 1392971, 1471307, 1267019, 1632364], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0014, 0.0014, 0.0014, 0.0013, 0.0013], device='cuda:0'),
+indices=tensor([326657, 449732, 309956, 167681,  41156], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0003, 0.0003, 0.0003, 0.0003, 0.0003], device='cuda:0'),
+indices=tensor([2221643,  312395, 2221420,  312172, 2221402], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0015, 0.0015, 0.0014, 0.0014, 0.0014], device='cuda:0'),
+indices=tensor([1239788, 1798892,  164588, 1799944, 1238738], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0060, 0.0056, 0.0055, 0.0055, 0.0051], device='cuda:0'),
+indices=tensor([201803, 152651,  10571,   9035,   8797], device='cuda:0'))
+iter 0: loss 11.0254, time 22616.17ms, mfu -100.00%
+torch.return_types.topk(
+values=tensor([0.0006, 0.0005, 0.0005, 0.0004, 0.0004], device='cuda:0'),
+indices=tensor([1419884, 1419271, 1419849, 1376108, 1419551], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0020, 0.0020, 0.0020, 0.0020, 0.0019], device='cuda:0'),
+indices=tensor([577222, 515014, 584902, 555663, 450502], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0003, 0.0003, 0.0002, 0.0002, 0.0002], device='cuda:0'),
+indices=tensor([  22479, 1647203,  786857,   22871, 1648028], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0026, 0.0025, 0.0025, 0.0024, 0.0022], device='cuda:0'),
+indices=tensor([1156912, 1178416, 1156794, 1178298, 2182960], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0006, 0.0006, 0.0006, 0.0005, 0.0005], device='cuda:0'),
+indices=tensor([1361182, 1361134, 1360964, 1361094, 1223710], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0033, 0.0032, 0.0032, 0.0032, 0.0032], device='cuda:0'),
+indices=tensor([547823, 545520, 547782, 289008, 244464], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0005, 0.0004, 0.0004, 0.0004, 0.0004], device='cuda:0'),
+indices=tensor([ 487554,  486990,  756354, 2260866,  755790], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0024, 0.0023, 0.0023, 0.0023, 0.0022], device='cuda:0'),
+indices=tensor([2334872, 2336961, 2336211,  978387, 2334769], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0006, 0.0006, 0.0006, 0.0006, 0.0006], device='cuda:0'),
+indices=tensor([1677535, 1677954, 1677452, 1677746, 1378379], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0030, 0.0028, 0.0028, 0.0026, 0.0026], device='cuda:0'),
+indices=tensor([105759, 244712, 186399, 294632, 105692], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0004, 0.0004, 0.0004, 0.0003, 0.0003], device='cuda:0'),
+indices=tensor([1849368,  731160, 1849858,  731650, 1752600], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0028, 0.0027, 0.0025, 0.0025, 0.0025], device='cuda:0'),
+indices=tensor([979388, 979321, 978017, 884156, 977506], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0005, 0.0004, 0.0004, 0.0004, 0.0004], device='cuda:0'),
+indices=tensor([1697204, 1696521, 1619721, 1620404, 1297844], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0025, 0.0025, 0.0023, 0.0023, 0.0023], device='cuda:0'),
+indices=tensor([294424, 220696, 294409, 220681,  17944], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0003, 0.0003, 0.0003, 0.0003, 0.0003], device='cuda:0'),
+indices=tensor([ 747524,  747972,  747765,  747783, 1969860], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0025, 0.0024, 0.0020, 0.0020, 0.0020], device='cuda:0'),
+indices=tensor([ 883930,  883465, 1178842, 1178377, 1408777], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0005, 0.0004, 0.0004, 0.0004, 0.0004], device='cuda:0'),
+indices=tensor([1387897, 1300484, 1388084, 1300743, 1300633], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0022, 0.0020, 0.0020, 0.0019, 0.0019], device='cuda:0'),
+indices=tensor([385113, 346713, 157785, 547929, 220734], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0003, 0.0003, 0.0003, 0.0003, 0.0003], device='cuda:0'),
+indices=tensor([1531033, 2057593, 1117849,  494713, 1531138], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0019, 0.0017, 0.0017, 0.0016, 0.0016], device='cuda:0'),
+indices=tensor([1178811,  982203, 1178094, 1178272, 1178254], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0005, 0.0004, 0.0004, 0.0004, 0.0004], device='cuda:0'),
+indices=tensor([1687588, 1696036, 1580905, 1283620, 1687960], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0024, 0.0022, 0.0022, 0.0020, 0.0020], device='cuda:0'),
+indices=tensor([335640, 190488,   5400, 155928, 474648], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0004, 0.0003, 0.0003, 0.0003, 0.0003], device='cuda:0'),
+indices=tensor([1517860,  673129, 2040100, 1517581, 1517974], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0016, 0.0016, 0.0016, 0.0015, 0.0015], device='cuda:0'),
+indices=tensor([876494, 624590, 163790, 762830,  22478], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0004, 0.0004, 0.0004, 0.0003, 0.0003], device='cuda:0'),
+indices=tensor([1214500, 1444900, 1637668, 1563801, 1564009], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0018, 0.0017, 0.0017, 0.0016, 0.0015], device='cuda:0'),
+indices=tensor([186251, 186402,   5802, 556458, 185999], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0004, 0.0004, 0.0003, 0.0003, 0.0003], device='cuda:0'),
+indices=tensor([999114, 860452, 998761, 998543, 998942], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0019, 0.0019, 0.0018, 0.0018, 0.0017], device='cuda:0'),
+indices=tensor([  22921, 2127241,  625033,  763273,  764356], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0005, 0.0004, 0.0004, 0.0004, 0.0004], device='cuda:0'),
+indices=tensor([1662244, 1661965, 1339684, 1360420, 1400010], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0021, 0.0018, 0.0017, 0.0016, 0.0016], device='cuda:0'),
+indices=tensor([186215, 573287, 186486, 142439,   5734], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0003, 0.0003, 0.0003, 0.0003, 0.0003], device='cuda:0'),
+indices=tensor([759076, 867364, 759253, 758558, 867085], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0016, 0.0015, 0.0014, 0.0014, 0.0014], device='cuda:0'),
+indices=tensor([ 624620,  625006,  126956, 2225132, 1177580], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0004, 0.0003, 0.0003, 0.0003, 0.0003], device='cuda:0'),
+indices=tensor([1596446, 1596141, 1596491, 1276774, 1191710], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0015, 0.0015, 0.0015, 0.0015, 0.0014], device='cuda:0'),
+indices=tensor([573120, 573396, 244924, 156604, 573682], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0004, 0.0003, 0.0003, 0.0003, 0.0003], device='cuda:0'),
+indices=tensor([2077030, 2076964, 2077141, 2077151, 2076926], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0017, 0.0016, 0.0014, 0.0014, 0.0014], device='cuda:0'),
+indices=tensor([ 170868,  978804, 1178484, 1986420, 2226036], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0004, 0.0003, 0.0003, 0.0003, 0.0003], device='cuda:0'),
+indices=tensor([1518155, 1438283, 1760843, 1447499, 1587275], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0016, 0.0015, 0.0015, 0.0015, 0.0015], device='cuda:0'),
+indices=tensor([573499, 167995,  62011,  31291, 300091], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0003, 0.0003, 0.0003, 0.0003, 0.0003], device='cuda:0'),
+indices=tensor([ 232523,  520523, 1521995,  405323, 1644107], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0016, 0.0015, 0.0015, 0.0014, 0.0013], device='cuda:0'),
+indices=tensor([1179144, 1178454, 1179172, 1876488, 2220552], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0005, 0.0004, 0.0004, 0.0004, 0.0004], device='cuda:0'),
+indices=tensor([1729355, 1729464, 1729114, 1729177, 1729132], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0019, 0.0018, 0.0017, 0.0016, 0.0016], device='cuda:0'),
+indices=tensor([572928, 573364, 294585, 573188, 294510], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0003, 0.0003, 0.0003, 0.0003, 0.0003], device='cuda:0'),
+indices=tensor([2331467, 1608011, 1336139, 2331229, 2331226], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0014, 0.0013, 0.0013, 0.0013, 0.0013], device='cuda:0'),
+indices=tensor([1176809, 1178474, 1984745, 1178308, 1986410], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0003, 0.0003, 0.0003, 0.0003, 0.0002], device='cuda:0'),
+indices=tensor([1471307, 1392971, 1267019, 1632587, 1471084], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0014, 0.0014, 0.0013, 0.0013, 0.0013], device='cuda:0'),
+indices=tensor([326657, 449732, 496580,  41156, 309956], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0003, 0.0003, 0.0003, 0.0003, 0.0003], device='cuda:0'),
+indices=tensor([2221643,  312395, 2221420, 2221402,  312172], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0015, 0.0015, 0.0015, 0.0014, 0.0013], device='cuda:0'),
+indices=tensor([1239788, 1798892,  164588, 1799944, 1238738], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0059, 0.0058, 0.0055, 0.0055, 0.0053], device='cuda:0'),
+indices=tensor([201803, 152651,   9035,  10571, 152410], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0006, 0.0005, 0.0005, 0.0005, 0.0004], device='cuda:0'),
+indices=tensor([1419884, 1419271, 1419849, 1376108, 1419646], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0020, 0.0020, 0.0020, 0.0020, 0.0019], device='cuda:0'),
+indices=tensor([577222, 555663, 515014, 584902, 450502], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0003, 0.0003, 0.0003, 0.0002, 0.0002], device='cuda:0'),
+indices=tensor([  22479, 1647203,   22871, 1848015,  801635], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0026, 0.0025, 0.0025, 0.0025, 0.0023], device='cuda:0'),
+indices=tensor([1178416, 1156912, 1156794, 1178298, 1178933], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0006, 0.0006, 0.0006, 0.0005, 0.0005], device='cuda:0'),
+indices=tensor([1361182, 1361134, 1360964, 1361094, 1223710], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0032, 0.0032, 0.0032, 0.0032, 0.0031], device='cuda:0'),
+indices=tensor([244464, 315078, 545520, 315119, 547823], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0005, 0.0005, 0.0004, 0.0004, 0.0004], device='cuda:0'),
+indices=tensor([ 487554,  486990,  756354, 2260866,  755790], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0024, 0.0024, 0.0024, 0.0023, 0.0023], device='cuda:0'),
+indices=tensor([2334872, 2336961, 2336211,  978387, 2334769], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0006, 0.0006, 0.0006, 0.0006, 0.0005], device='cuda:0'),
+indices=tensor([1677535, 1677954, 1677452, 1677746, 1378379], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0029, 0.0029, 0.0028, 0.0027, 0.0027], device='cuda:0'),
+indices=tensor([244712, 105759, 186399, 294632, 244656], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0004, 0.0004, 0.0004, 0.0004, 0.0003], device='cuda:0'),
+indices=tensor([ 731160, 1849368, 1849858, 1592706,  731650], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0028, 0.0027, 0.0026, 0.0026, 0.0025], device='cuda:0'),
+indices=tensor([979388, 979321, 977506, 977066, 978017], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0005, 0.0005, 0.0005, 0.0005, 0.0004], device='cuda:0'),
+indices=tensor([1697204, 1696521, 1620404, 1619721, 1297844], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0026, 0.0024, 0.0023, 0.0023, 0.0023], device='cuda:0'),
+indices=tensor([294424, 220696, 186557, 244504, 294409], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0004, 0.0004, 0.0003, 0.0003, 0.0003], device='cuda:0'),
+indices=tensor([747524, 747972, 747765, 747783, 747325], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0024, 0.0023, 0.0021, 0.0020, 0.0020], device='cuda:0'),
+indices=tensor([ 883465,  883930, 1178377, 1178842, 1408777], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0005, 0.0004, 0.0004, 0.0004, 0.0004], device='cuda:0'),
+indices=tensor([1387897, 1300484, 1504772, 1300743, 1388084], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0022, 0.0021, 0.0020, 0.0019, 0.0019], device='cuda:0'),
+indices=tensor([385113, 346713, 157785, 210009,   5694], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0003, 0.0003, 0.0003, 0.0003, 0.0003], device='cuda:0'),
+indices=tensor([1531033, 2057593, 1117849,  653689,  919417], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0019, 0.0017, 0.0017, 0.0017, 0.0017], device='cuda:0'),
+indices=tensor([1178811, 1178094,  982203, 1178272, 1178254], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0005, 0.0004, 0.0004, 0.0004, 0.0004], device='cuda:0'),
+indices=tensor([1687588, 1580905, 1283620, 1687960, 1696036], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0025, 0.0023, 0.0022, 0.0021, 0.0021], device='cuda:0'),
+indices=tensor([335640, 190488,   5400, 155928, 474648], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0003, 0.0003, 0.0003, 0.0003, 0.0003], device='cuda:0'),
+indices=tensor([1517860,  673129, 2040100, 1517581, 1517974], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0017, 0.0016, 0.0016, 0.0016, 0.0015], device='cuda:0'),
+indices=tensor([624590, 762830, 876494,  22478, 626326], device='cuda:0'))
+torch.return_types.topk(
+values=tensor([0.0004, 0.0004, 0.0004, 0.0003, 0.0003], device='cuda:0'),
+indices=tensor([1214500, 1444900, 1637668, 1563801, 1564009], device='cuda:0'))
+Traceback (most recent call last):
+  File "train.py", line 393, in <module>
+    scaler.step(optimizer)
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py", line 338, in step
+    retval = self._maybe_opt_step(optimizer, optimizer_state, *args, **kwargs)
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py", line 285, in _maybe_opt_step
+    retval = optimizer.step(*args, **kwargs)
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/optim/lr_scheduler.py", line 65, in wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/optim/optimizer.py", line 113, in wrapper
+    return func(*args, **kwargs)
+  File "/home/yxdong/anaconda3/envs/dyx-py38/lib/python3.8/site-packages/torch/autograd/grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/yxdong/nano-gpt-test/nanoGPT-eva/eva.py", line 249, in step
+    self._precondition_grads()
+  File "/home/yxdong/nano-gpt-test/nanoGPT-eva/eva.py", line 155, in _precondition_grads
+    a = (ma.T @ ma).item()
+KeyboardInterrupt

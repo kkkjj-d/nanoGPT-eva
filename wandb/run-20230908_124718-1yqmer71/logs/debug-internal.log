@@ -1,0 +1,1153 @@
+2023-09-08 12:47:18,061 INFO    StreamThr :3351468 [internal.py:wandb_internal():86] W&B internal server running at pid: 3351468, started at: 2023-09-08 12:47:18.060530
+2023-09-08 12:47:18,065 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status
+2023-09-08 12:47:18,066 INFO    WriterThread:3351468 [datastore.py:open_for_write():85] open: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/run-1yqmer71.wandb
+2023-09-08 12:47:18,073 DEBUG   SenderThread:3351468 [sender.py:send():369] send: header
+2023-09-08 12:47:18,142 DEBUG   SenderThread:3351468 [sender.py:send():369] send: run
+2023-09-08 12:47:19,214 INFO    SenderThread:3351468 [dir_watcher.py:__init__():211] watching files in: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files
+2023-09-08 12:47:19,214 INFO    SenderThread:3351468 [sender.py:_start_run_threads():1100] run started: 1yqmer71 with start time 1694177238.056072
+2023-09-08 12:47:19,214 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: summary_record
+2023-09-08 12:47:19,216 INFO    SenderThread:3351468 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-09-08 12:47:19,225 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: check_version
+2023-09-08 12:47:19,226 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: check_version
+2023-09-08 12:47:20,220 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_created():272] file/dir created: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/wandb-summary.json
+2023-09-08 12:47:20,332 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: run_start
+2023-09-08 12:47:20,373 DEBUG   HandlerThread:3351468 [system_info.py:__init__():31] System info init
+2023-09-08 12:47:20,373 DEBUG   HandlerThread:3351468 [system_info.py:__init__():46] System info init done
+2023-09-08 12:47:20,373 INFO    HandlerThread:3351468 [system_monitor.py:start():181] Starting system monitor
+2023-09-08 12:47:20,373 INFO    SystemMonitor:3351468 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-09-08 12:47:20,375 INFO    HandlerThread:3351468 [system_monitor.py:probe():201] Collecting system info
+2023-09-08 12:47:20,376 INFO    SystemMonitor:3351468 [interfaces.py:start():190] Started cpu monitoring
+2023-09-08 12:47:20,377 INFO    SystemMonitor:3351468 [interfaces.py:start():190] Started disk monitoring
+2023-09-08 12:47:20,379 INFO    SystemMonitor:3351468 [interfaces.py:start():190] Started gpu monitoring
+2023-09-08 12:47:20,380 INFO    SystemMonitor:3351468 [interfaces.py:start():190] Started memory monitoring
+2023-09-08 12:47:20,385 INFO    SystemMonitor:3351468 [interfaces.py:start():190] Started network monitoring
+2023-09-08 12:47:20,427 DEBUG   HandlerThread:3351468 [system_info.py:probe():195] Probing system
+2023-09-08 12:47:20,437 DEBUG   HandlerThread:3351468 [system_info.py:_probe_git():180] Probing git
+2023-09-08 12:47:20,456 DEBUG   HandlerThread:3351468 [system_info.py:_probe_git():188] Probing git done
+2023-09-08 12:47:20,456 DEBUG   HandlerThread:3351468 [system_info.py:probe():240] Probing system done
+2023-09-08 12:47:20,456 DEBUG   HandlerThread:3351468 [system_monitor.py:probe():210] {'os': 'Linux-5.4.0-156-generic-x86_64-with-glibc2.10', 'python': '3.8.0', 'heartbeatAt': '2023-09-08T12:47:20.427165', 'startedAt': '2023-09-08T12:47:18.039461', 'docker': None, 'cuda': None, 'args': ('config/train_gpt2.py', '--optim=eva', '--eva_lr=0.8', '--lr_s=cos', '--warmup_iters=100', '--eva_kl_clip=0.0003', '--eva_damping=0.06'), 'state': 'running', 'program': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'git@github.com:kkkjj-d/nanoGPT-eva.git', 'commit': 'eba36e84649f3c6d840a93092cb779a260544d08'}, 'email': '1262670315@qq.com', 'root': '/home/yxdong/nano-gpt-test/nanoGPT-eva', 'host': 'gpu9', 'username': 'yxdong', 'executable': '/home/yxdong/anaconda3/envs/dyx-py38/bin/python', 'cpu_count': 40, 'cpu_count_logical': 80, 'cpu_freq': {'current': 1094.6717750000003, 'min': 800.0, 'max': 3900.0}, 'cpu_freq_per_core': [{'current': 874.604, 'min': 800.0, 'max': 3900.0}, {'current': 800.518, 'min': 800.0, 'max': 3900.0}, {'current': 800.363, 'min': 800.0, 'max': 3900.0}, {'current': 800.467, 'min': 800.0, 'max': 3900.0}, {'current': 800.502, 'min': 800.0, 'max': 3900.0}, {'current': 800.685, 'min': 800.0, 'max': 3900.0}, {'current': 801.175, 'min': 800.0, 'max': 3900.0}, {'current': 800.699, 'min': 800.0, 'max': 3900.0}, {'current': 800.613, 'min': 800.0, 'max': 3900.0}, {'current': 800.796, 'min': 800.0, 'max': 3900.0}, {'current': 800.239, 'min': 800.0, 'max': 3900.0}, {'current': 800.005, 'min': 800.0, 'max': 3900.0}, {'current': 800.589, 'min': 800.0, 'max': 3900.0}, {'current': 801.082, 'min': 800.0, 'max': 3900.0}, {'current': 800.982, 'min': 800.0, 'max': 3900.0}, {'current': 800.383, 'min': 800.0, 'max': 3900.0}, {'current': 800.837, 'min': 800.0, 'max': 3900.0}, {'current': 800.629, 'min': 800.0, 'max': 3900.0}, {'current': 2915.031, 'min': 800.0, 'max': 3900.0}, {'current': 2925.065, 'min': 800.0, 'max': 3900.0}, {'current': 800.402, 'min': 800.0, 'max': 3900.0}, {'current': 800.633, 'min': 800.0, 'max': 3900.0}, {'current': 2099.674, 'min': 800.0, 'max': 3900.0}, {'current': 1774.203, 'min': 800.0, 'max': 3900.0}, {'current': 969.915, 'min': 800.0, 'max': 3900.0}, {'current': 800.877, 'min': 800.0, 'max': 3900.0}, {'current': 949.265, 'min': 800.0, 'max': 3900.0}, {'current': 800.193, 'min': 800.0, 'max': 3900.0}, {'current': 800.044, 'min': 800.0, 'max': 3900.0}, {'current': 800.025, 'min': 800.0, 'max': 3900.0}, {'current': 800.777, 'min': 800.0, 'max': 3900.0}, {'current': 800.502, 'min': 800.0, 'max': 3900.0}, {'current': 800.074, 'min': 800.0, 'max': 3900.0}, {'current': 967.344, 'min': 800.0, 'max': 3900.0}, {'current': 1262.791, 'min': 800.0, 'max': 3900.0}, {'current': 3467.67, 'min': 800.0, 'max': 3900.0}, {'current': 800.036, 'min': 800.0, 'max': 3900.0}, {'current': 800.101, 'min': 800.0, 'max': 3900.0}, {'current': 800.541, 'min': 800.0, 'max': 3900.0}, {'current': 2904.244, 'min': 800.0, 'max': 3900.0}, {'current': 853.248, 'min': 800.0, 'max': 3900.0}, {'current': 799.982, 'min': 800.0, 'max': 3900.0}, {'current': 800.233, 'min': 800.0, 'max': 3900.0}, {'current': 801.174, 'min': 800.0, 'max': 3900.0}, {'current': 800.138, 'min': 800.0, 'max': 3900.0}, {'current': 800.931, 'min': 800.0, 'max': 3900.0}, {'current': 800.822, 'min': 800.0, 'max': 3900.0}, {'current': 800.259, 'min': 800.0, 'max': 3900.0}, {'current': 800.652, 'min': 800.0, 'max': 3900.0}, {'current': 800.549, 'min': 800.0, 'max': 3900.0}, {'current': 800.186, 'min': 800.0, 'max': 3900.0}, {'current': 800.913, 'min': 800.0, 'max': 3900.0}, {'current': 800.001, 'min': 800.0, 'max': 3900.0}, {'current': 800.1, 'min': 800.0, 'max': 3900.0}, {'current': 801.096, 'min': 800.0, 'max': 3900.0}, {'current': 800.411, 'min': 800.0, 'max': 3900.0}, {'current': 800.198, 'min': 800.0, 'max': 3900.0}, {'current': 800.839, 'min': 800.0, 'max': 3900.0}, {'current': 3600.635, 'min': 800.0, 'max': 3900.0}, {'current': 3603.261, 'min': 800.0, 'max': 3900.0}, {'current': 800.045, 'min': 800.0, 'max': 3900.0}, {'current': 799.951, 'min': 800.0, 'max': 3900.0}, {'current': 2100.0, 'min': 800.0, 'max': 3900.0}, {'current': 1488.451, 'min': 800.0, 'max': 3900.0}, {'current': 880.554, 'min': 800.0, 'max': 3900.0}, {'current': 800.074, 'min': 800.0, 'max': 3900.0}, {'current': 1767.705, 'min': 800.0, 'max': 3900.0}, {'current': 800.384, 'min': 800.0, 'max': 3900.0}, {'current': 800.137, 'min': 800.0, 'max': 3900.0}, {'current': 800.342, 'min': 800.0, 'max': 3900.0}, {'current': 800.093, 'min': 800.0, 'max': 3900.0}, {'current': 801.53, 'min': 800.0, 'max': 3900.0}, {'current': 800.651, 'min': 800.0, 'max': 3900.0}, {'current': 1223.3, 'min': 800.0, 'max': 3900.0}, {'current': 1160.181, 'min': 800.0, 'max': 3900.0}, {'current': 2798.143, 'min': 800.0, 'max': 3900.0}, {'current': 800.871, 'min': 800.0, 'max': 3900.0}, {'current': 801.624, 'min': 800.0, 'max': 3900.0}, {'current': 800.658, 'min': 800.0, 'max': 3900.0}, {'current': 3472.394, 'min': 800.0, 'max': 3900.0}], 'disk': {'total': 686.5967483520508, 'used': 195.78971099853516}, 'gpu': 'NVIDIA GeForce RTX 2080 Ti', 'gpu_count': 4, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}], 'memory': {'total': 503.28995513916016}}
+2023-09-08 12:47:20,456 INFO    HandlerThread:3351468 [system_monitor.py:probe():211] Finished collecting system info
+2023-09-08 12:47:20,456 INFO    HandlerThread:3351468 [system_monitor.py:probe():214] Publishing system info
+2023-09-08 12:47:20,457 DEBUG   HandlerThread:3351468 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-09-08 12:47:20,458 DEBUG   HandlerThread:3351468 [system_info.py:_save_pip():67] Saving pip packages done
+2023-09-08 12:47:20,458 DEBUG   HandlerThread:3351468 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-09-08 12:47:21,223 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_created():272] file/dir created: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/requirements.txt
+2023-09-08 12:47:21,224 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_created():272] file/dir created: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/conda-environment.yaml
+2023-09-08 12:47:23,600 DEBUG   HandlerThread:3351468 [system_info.py:_save_conda():86] Saving conda packages done
+2023-09-08 12:47:23,605 INFO    HandlerThread:3351468 [system_monitor.py:probe():216] Finished publishing system info
+2023-09-08 12:47:23,613 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:47:23,615 DEBUG   SenderThread:3351468 [sender.py:send():369] send: files
+2023-09-08 12:47:23,615 INFO    SenderThread:3351468 [sender.py:_save_file():1354] saving file wandb-metadata.json with policy now
+2023-09-08 12:47:23,631 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:47:23,632 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:47:24,227 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/conda-environment.yaml
+2023-09-08 12:47:24,227 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_created():272] file/dir created: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/wandb-metadata.json
+2023-09-08 12:47:24,258 DEBUG   SenderThread:3351468 [sender.py:send():369] send: telemetry
+2023-09-08 12:47:24,385 INFO    wandb-upload_0:3351468 [upload_job.py:push():133] Uploaded file /tmp/tmpwpp1jkhlwandb/z608spl1-wandb-metadata.json
+2023-09-08 12:47:29,260 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:47:34,262 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:47:38,632 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:47:38,634 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:47:39,621 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-08 12:47:39,626 DEBUG   SenderThread:3351468 [sender.py:send():369] send: history
+2023-09-08 12:47:39,626 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:47:39,626 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: summary_record
+2023-09-08 12:47:39,633 INFO    SenderThread:3351468 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-09-08 12:47:40,244 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/wandb-summary.json
+2023-09-08 12:47:40,245 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_created():272] file/dir created: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 12:47:42,249 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 12:47:44,634 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:47:48,256 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 12:47:49,258 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 12:47:49,650 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:47:50,260 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/config.yaml
+2023-09-08 12:47:53,631 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:47:53,632 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:47:55,934 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:48:00,935 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:48:05,936 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:48:08,633 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:48:08,634 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:48:10,993 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:48:15,995 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:48:20,386 DEBUG   SystemMonitor:3351468 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-09-08 12:48:20,391 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 12:48:21,394 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:48:23,633 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:48:23,636 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:48:26,910 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:48:31,912 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:48:36,913 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:48:38,633 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:48:38,634 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:48:41,985 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:48:46,986 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:48:50,396 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 12:48:52,330 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 12:48:52,573 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:48:53,632 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:48:53,634 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:48:57,984 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:49:02,986 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:49:07,987 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:49:08,634 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:49:08,635 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:49:12,991 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:49:17,992 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:49:20,401 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 12:49:23,404 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:49:23,632 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:49:23,634 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:49:28,947 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:49:33,948 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:49:38,635 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:49:38,636 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:49:39,026 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:49:44,027 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:49:49,028 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:49:50,405 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 12:49:53,634 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:49:53,635 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:49:54,778 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:49:56,398 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 12:49:59,779 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:50:04,780 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:50:08,635 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:50:08,636 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:50:09,980 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:50:14,981 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:50:19,982 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:50:20,410 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 12:50:23,636 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:50:23,637 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:50:25,947 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:50:30,948 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:50:35,949 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:50:38,634 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:50:38,635 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:50:41,947 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:50:46,948 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:50:50,415 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 12:50:52,418 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:50:53,634 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:50:53,635 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:50:58,003 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:51:00,467 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 12:51:03,063 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:51:08,065 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:51:08,635 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:51:08,636 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:51:13,963 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:51:18,964 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:51:20,419 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 12:51:23,635 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:51:23,637 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:51:24,883 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:51:29,884 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:51:34,885 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:51:38,636 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:51:38,638 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:51:39,933 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:51:44,935 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:51:49,936 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:51:50,423 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 12:51:53,637 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:51:53,638 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:51:55,911 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:52:00,912 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:52:04,535 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 12:52:06,455 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:52:08,637 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:52:08,638 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:52:11,922 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:52:16,923 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:52:20,427 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 12:52:22,430 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:52:23,636 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:52:23,637 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:52:27,927 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:52:32,929 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:52:37,930 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:52:38,686 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:52:38,688 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:52:43,042 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:52:48,043 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:52:50,428 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 12:52:53,432 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:52:53,686 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:52:53,687 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:52:59,045 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:53:04,048 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:53:08,685 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:53:08,686 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:53:09,514 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:53:10,607 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 12:53:14,515 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:53:19,517 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:53:20,433 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 12:53:23,686 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:53:23,687 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:53:24,585 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:53:29,586 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:53:34,587 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:53:38,688 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:53:38,690 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:53:39,961 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:53:44,962 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:53:49,964 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:53:50,435 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 12:53:53,686 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:53:53,688 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:53:55,007 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:54:00,007 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:54:05,009 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:54:08,687 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:54:08,688 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:54:10,994 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:54:14,675 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 12:54:16,507 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:54:20,437 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 12:54:22,440 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:54:23,687 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:54:23,689 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:54:28,007 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:54:33,008 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:54:38,010 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:54:38,687 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:54:38,688 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:54:43,962 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:54:48,963 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:54:50,440 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 12:54:53,688 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:54:53,689 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:54:54,022 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:54:59,023 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:55:04,024 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:55:08,687 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:55:08,688 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:55:09,242 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:55:14,244 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:55:18,739 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 12:55:20,169 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:55:20,444 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 12:55:23,688 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:55:23,689 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:55:25,224 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:55:30,226 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:55:35,227 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:55:38,689 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:55:38,690 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:55:40,997 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:55:45,998 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:55:50,448 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 12:55:51,452 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:55:53,690 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:55:53,691 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:55:57,040 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:56:02,041 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:56:07,042 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:56:08,689 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:56:08,690 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:56:12,969 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:56:17,970 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:56:20,454 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 12:56:22,805 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 12:56:23,667 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:56:23,690 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:56:23,691 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:56:28,998 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:56:33,999 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:56:38,689 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:56:38,690 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:56:39,951 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:56:44,952 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:56:49,953 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:56:50,457 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 12:56:53,690 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:56:53,691 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:56:55,071 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:57:00,072 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:57:05,073 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:57:08,690 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:57:08,691 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:57:11,012 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:57:16,012 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:57:20,461 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 12:57:21,464 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:57:23,691 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:57:23,692 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:57:27,139 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:57:28,874 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 12:57:32,140 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:57:37,141 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:57:38,690 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:57:38,692 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:57:42,990 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:57:47,991 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:57:50,466 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 12:57:53,469 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:57:53,691 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:57:53,692 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:57:59,005 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:58:04,006 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:58:08,692 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:58:08,694 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:58:09,063 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:58:14,064 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:58:19,065 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:58:20,470 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 12:58:23,692 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:58:23,693 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:58:25,007 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:58:30,008 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:58:32,944 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 12:58:35,777 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:58:38,692 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:58:38,693 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:58:40,990 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:58:45,991 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:58:50,474 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 12:58:51,477 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:58:53,694 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:58:53,696 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:58:57,065 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:59:02,066 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:59:07,068 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:59:08,693 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:59:08,694 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:59:12,951 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:59:17,953 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:59:20,479 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 12:59:23,482 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:59:23,694 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:59:23,695 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:59:28,590 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:59:33,591 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:59:37,016 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 12:59:38,693 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:59:38,694 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:59:39,270 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:59:44,271 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:59:49,273 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 12:59:50,481 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 12:59:53,693 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 12:59:53,695 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 12:59:55,019 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:00:00,021 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:00:05,022 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:00:08,693 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:00:08,695 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:00:11,014 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:00:16,016 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:00:20,485 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:00:21,488 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:00:23,696 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:00:23,697 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:00:26,605 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:00:31,606 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:00:36,607 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:00:38,694 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:00:38,695 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:00:41,086 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 13:00:41,670 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:00:46,671 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:00:50,488 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:00:52,491 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:00:53,695 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:00:53,697 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:00:58,006 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:01:03,007 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:01:08,009 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:01:08,694 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:01:08,696 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:01:13,035 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:01:18,036 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:01:20,488 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:01:23,491 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:01:23,695 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:01:23,696 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:01:29,170 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:01:34,172 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:01:38,695 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:01:38,697 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:01:40,083 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:01:45,682 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:01:47,156 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 13:01:50,490 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:01:51,493 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:01:53,695 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:01:53,696 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:01:57,163 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:02:02,164 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:02:07,166 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:02:08,696 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:02:08,697 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:02:12,207 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:02:17,208 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:02:20,492 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:02:22,495 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:02:23,696 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:02:23,698 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:02:27,781 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:02:32,783 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:02:37,784 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:02:38,696 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:02:38,697 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:02:43,104 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:02:48,105 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:02:50,494 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:02:51,282 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 13:02:53,497 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:02:53,696 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:02:53,697 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:02:59,124 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:03:04,125 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:03:08,696 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:03:08,698 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:03:10,121 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:03:15,122 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:03:20,124 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:03:20,496 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:03:23,697 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:03:23,698 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:03:26,082 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:03:31,083 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:03:36,084 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:03:38,697 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:03:38,698 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:03:41,122 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:03:46,123 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:03:50,500 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:03:51,503 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:03:53,697 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:03:53,698 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:03:55,420 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 13:03:57,053 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:04:02,055 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:04:07,056 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:04:08,698 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:04:08,700 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:04:12,087 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:04:17,088 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:04:20,504 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:04:22,507 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:04:23,698 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:04:23,700 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:04:28,384 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:04:33,386 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:04:38,387 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:04:38,698 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:04:38,699 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:04:43,855 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:04:48,856 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:04:50,509 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:04:53,698 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:04:53,700 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:04:54,067 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:04:59,533 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:05:01,546 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 13:05:04,534 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:05:08,698 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:05:08,699 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:05:10,052 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:05:15,054 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:05:20,055 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:05:20,515 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:05:23,699 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:05:23,700 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:05:25,149 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:05:30,150 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:05:35,152 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:05:38,699 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:05:38,702 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:05:41,128 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:05:46,129 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:05:50,518 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:05:51,521 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:05:53,699 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:05:53,700 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:05:56,921 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:06:01,923 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:06:05,668 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 13:06:07,192 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:06:08,699 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:06:08,700 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:06:13,127 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:06:18,128 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:06:20,523 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:06:23,526 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:06:23,700 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:06:23,702 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:06:29,134 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:06:34,135 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:06:38,700 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:06:38,701 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:06:40,317 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:06:45,318 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:06:50,319 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:06:50,527 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:06:53,702 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:06:53,704 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:06:55,483 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:07:00,484 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:07:05,486 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:07:08,703 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:07:08,704 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:07:09,809 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 13:07:10,508 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:07:15,509 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:07:20,511 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:07:20,531 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:07:23,702 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:07:23,703 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:07:26,096 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:07:31,097 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:07:36,098 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:07:38,702 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:07:38,704 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:07:41,145 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:07:46,146 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:07:50,536 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:07:51,538 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:07:53,702 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:07:53,704 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:07:57,095 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:08:02,097 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:08:07,098 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:08:08,703 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:08:08,704 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:08:12,434 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:08:13,950 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 13:08:17,665 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:08:20,540 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:08:23,543 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:08:23,705 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:08:23,706 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:08:28,911 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:08:33,913 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:08:38,704 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:08:38,706 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:08:39,122 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:08:44,123 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:08:49,125 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:08:50,543 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:08:53,704 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:08:53,705 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:08:54,127 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:08:59,128 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:09:04,129 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:09:08,705 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:09:08,706 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:09:09,449 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:09:14,450 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:09:20,097 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 13:09:20,415 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:09:20,548 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:09:23,704 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:09:23,705 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:09:26,076 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:09:31,078 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:09:36,079 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:09:38,705 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:09:38,706 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:09:41,152 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:09:46,153 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:09:50,553 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:09:51,556 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:09:53,705 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:09:53,706 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:09:56,802 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:10:01,803 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:10:06,805 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:10:08,705 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:10:08,706 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:10:12,118 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:10:17,119 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:10:20,556 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:10:22,157 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:10:23,705 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:10:23,706 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:10:24,238 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 13:10:28,057 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:10:33,059 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:10:38,060 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:10:38,707 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:10:38,708 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:10:43,128 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:10:48,129 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:10:50,560 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:10:53,564 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:10:53,708 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:10:53,708 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:10:59,084 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:11:04,085 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:11:08,705 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:11:08,707 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:11:09,147 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:11:14,148 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:11:19,150 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:11:20,565 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:11:23,706 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:11:23,707 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:11:24,442 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:11:28,375 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 13:11:29,933 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:11:34,935 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:11:38,706 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:11:38,707 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:11:40,452 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:11:45,453 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:11:50,455 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:11:50,569 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:11:53,706 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:11:53,707 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:11:56,049 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:12:01,050 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:12:06,051 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:12:08,706 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:12:08,707 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:12:11,144 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:12:16,146 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:12:20,574 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:12:21,576 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:12:23,706 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:12:23,707 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:12:27,119 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:12:32,748 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:12:34,501 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 13:12:37,749 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:12:38,707 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:12:38,708 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:12:43,420 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:12:48,421 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:12:50,580 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:12:53,584 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:12:53,707 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:12:53,708 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:12:59,122 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:13:04,123 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:13:08,707 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:13:08,709 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:13:10,045 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:13:15,046 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:13:20,048 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:13:20,583 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:13:23,707 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:13:23,709 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:13:25,799 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:13:30,800 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:13:35,801 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:13:37,645 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 13:13:38,707 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:13:38,709 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:13:41,190 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:13:46,191 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:13:50,586 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:13:51,589 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:13:53,708 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:13:53,710 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:13:56,808 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:14:01,810 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:14:06,811 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:14:08,708 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:14:08,710 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:14:12,118 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:14:17,119 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:14:20,590 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:14:22,593 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:14:23,708 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:14:23,709 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:14:28,066 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:14:33,068 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:14:38,069 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:14:38,708 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:14:38,709 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:14:43,694 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:14:43,791 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 13:14:48,696 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:14:50,591 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:14:53,709 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:14:53,710 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:14:54,492 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:14:59,493 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:15:04,494 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:15:08,711 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:15:08,712 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:15:09,515 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:15:14,517 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:15:19,518 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:15:20,594 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:15:23,709 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:15:23,711 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:15:25,069 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:15:30,070 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:15:35,072 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:15:38,709 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:15:38,711 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:15:40,259 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:15:45,260 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:15:47,929 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 13:15:50,501 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:15:50,598 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:15:53,710 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:15:53,711 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:15:55,811 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:16:00,812 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:16:05,813 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:16:08,710 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:16:08,711 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:16:11,176 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:16:16,177 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:16:20,602 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:16:21,605 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:16:23,710 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:16:23,712 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:16:27,138 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:16:32,139 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:16:37,140 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:16:38,711 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:16:38,712 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:16:42,834 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:16:47,835 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:16:50,607 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:16:53,591 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:16:53,712 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:16:53,713 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:16:54,076 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 13:16:59,079 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:17:04,081 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:17:08,711 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:17:08,712 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:17:09,171 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:17:14,172 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:17:19,173 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:17:20,610 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:17:23,711 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:17:23,712 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:17:24,927 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:17:29,929 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:17:34,930 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:17:38,712 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:17:38,714 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:17:40,863 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:17:45,864 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:17:50,612 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:17:51,615 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:17:53,712 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:17:53,713 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:17:57,047 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:17:58,208 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 13:18:02,048 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:18:07,050 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:18:08,712 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:18:08,713 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:18:12,147 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:18:17,148 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:18:20,615 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:18:22,618 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:18:23,712 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:18:23,714 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:18:28,109 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:18:33,110 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:18:38,111 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:18:38,713 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:18:38,714 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:18:43,164 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:18:48,166 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:18:50,619 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:18:53,622 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:18:53,713 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:18:53,714 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:18:59,234 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:19:02,283 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 13:19:04,944 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:19:08,714 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:19:08,715 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:19:10,073 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:19:15,074 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:19:20,076 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:19:20,620 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:19:23,715 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:19:23,716 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:19:25,936 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:19:30,937 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:19:35,938 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:19:38,714 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:19:38,715 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:19:41,182 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:19:46,183 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:19:50,623 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:19:51,626 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:19:53,714 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:19:53,716 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:19:56,921 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:20:01,922 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:20:06,339 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 13:20:07,877 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:20:08,715 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:20:08,716 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:20:13,508 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:20:18,510 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:20:20,625 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:20:23,628 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:20:23,714 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:20:23,715 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:20:29,202 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:20:34,203 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:20:38,715 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:20:38,717 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:20:40,147 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:20:45,148 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:20:50,150 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:20:50,629 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:20:53,715 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:20:53,717 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:20:55,805 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:21:00,806 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:21:05,807 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:21:08,715 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:21:08,716 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:21:11,348 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:21:12,407 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 13:21:16,349 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:21:20,637 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:21:21,640 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:21:23,716 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:21:23,718 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:21:27,177 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:21:32,178 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:21:37,180 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:21:38,716 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:21:38,717 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:21:42,831 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:21:47,832 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:21:50,641 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:21:53,645 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:21:53,718 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:21:53,719 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:21:59,088 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:22:04,090 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:22:08,715 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:22:08,716 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:22:09,213 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:22:14,213 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:22:16,476 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 13:22:19,305 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:22:20,645 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:22:23,716 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:22:23,718 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:22:25,359 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:22:30,360 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:22:35,362 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:22:38,716 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:22:38,717 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:22:40,914 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:22:45,915 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:22:50,647 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:22:51,650 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:22:53,717 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:22:53,718 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:22:57,128 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:23:02,130 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:23:07,131 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:23:08,717 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:23:08,718 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:23:12,944 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:23:17,945 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:23:20,545 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 13:23:20,650 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:23:23,653 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:23:23,717 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:23:23,718 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:23:29,197 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:23:34,198 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:23:38,717 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:23:38,718 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:23:40,133 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:23:45,134 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:23:50,135 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:23:50,654 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:23:53,717 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:23:53,719 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:23:55,514 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:24:00,515 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:24:05,515 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:24:08,717 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:24:08,719 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:24:11,215 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:24:16,216 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:24:20,657 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:24:21,659 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:24:23,718 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:24:23,720 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:24:26,634 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 13:24:26,799 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:24:31,800 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:24:36,801 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:24:38,718 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:24:38,720 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:24:42,153 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:24:47,154 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:24:50,661 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:24:52,663 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:24:53,718 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:24:53,720 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:24:58,173 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:25:03,174 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:25:08,175 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:25:08,718 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:25:08,719 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:25:13,195 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:25:18,196 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:25:20,665 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:25:23,668 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:25:23,720 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:25:23,721 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:25:28,921 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:25:30,723 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 13:25:34,805 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:25:38,719 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:25:38,720 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:25:40,151 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:25:45,151 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:25:50,152 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:25:50,670 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:25:53,720 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:25:53,721 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:25:55,154 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:26:00,155 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:26:05,156 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:26:08,719 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:26:08,720 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:26:10,889 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:26:15,890 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:26:20,674 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:26:21,676 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:26:23,720 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:26:23,720 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:26:26,846 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:26:31,847 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:26:34,791 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 13:26:37,310 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:26:38,720 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:26:38,722 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:26:43,173 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:26:48,174 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:26:50,678 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:26:53,681 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:26:53,720 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:26:53,721 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:26:59,201 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:27:04,202 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:27:08,721 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:27:08,722 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:27:10,122 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:27:15,123 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:27:20,125 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:27:20,685 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:27:23,721 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:27:23,723 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:27:25,141 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:27:30,141 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:27:35,142 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:27:38,721 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:27:38,722 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:27:40,332 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:27:40,863 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 13:27:45,333 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:27:50,335 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:27:50,688 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:27:53,721 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:27:53,722 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:27:56,205 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:28:01,206 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:28:06,207 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:28:08,721 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:28:08,722 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:28:12,121 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:28:17,122 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:28:20,692 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:28:22,695 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:28:23,722 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:28:23,723 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:28:28,175 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:28:33,176 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:28:38,178 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:28:38,722 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:28:38,723 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:28:43,944 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:28:44,930 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 13:28:49,415 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:28:50,696 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:28:53,722 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:28:53,723 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:28:55,097 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:29:00,098 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:29:05,099 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:29:08,722 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:29:08,723 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:29:10,208 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:29:15,210 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:29:20,211 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:29:20,700 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:29:23,722 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:29:23,723 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:29:25,543 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:29:30,545 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:29:35,546 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:29:38,723 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:29:38,724 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:29:41,467 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:29:46,468 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:29:50,705 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:29:50,990 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 13:29:51,708 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:29:53,723 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:29:53,724 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:29:57,091 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:30:02,092 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:30:07,093 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:30:08,724 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:30:08,725 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:30:12,744 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:30:17,746 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:30:20,712 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:30:23,715 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:30:23,723 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:30:23,724 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:30:29,195 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:30:34,197 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:30:38,723 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:30:38,725 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:30:39,499 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:30:44,500 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:30:49,502 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:30:50,714 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:30:53,723 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:30:53,724 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:30:55,047 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 13:30:55,087 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:31:00,089 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:31:05,090 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:31:08,724 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:31:08,725 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:31:10,187 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:31:15,188 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:31:20,189 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:31:20,718 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:31:23,724 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:31:23,725 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:31:25,740 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:31:30,741 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:31:35,742 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:31:38,724 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:31:38,725 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:31:41,183 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:31:46,184 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:31:50,724 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:31:51,727 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:31:53,724 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:31:53,725 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:31:57,092 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:31:59,100 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 13:32:02,472 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:32:07,473 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:32:08,724 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-08 13:32:08,725 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: stop_status
+2023-09-08 13:32:13,121 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:32:14,065 DEBUG   SenderThread:3351468 [sender.py:send():369] send: exit
+2023-09-08 13:32:14,065 INFO    SenderThread:3351468 [sender.py:send_exit():574] handling exit code: 255
+2023-09-08 13:32:14,066 INFO    SenderThread:3351468 [sender.py:send_exit():576] handling runtime: 2693
+2023-09-08 13:32:14,069 INFO    SenderThread:3351468 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-09-08 13:32:14,069 INFO    SenderThread:3351468 [sender.py:send_exit():582] send defer
+2023-09-08 13:32:14,070 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: defer
+2023-09-08 13:32:14,070 INFO    HandlerThread:3351468 [handler.py:handle_request_defer():170] handle defer: 0
+2023-09-08 13:32:14,070 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: defer
+2023-09-08 13:32:14,070 INFO    SenderThread:3351468 [sender.py:send_request_defer():598] handle sender defer: 0
+2023-09-08 13:32:14,071 INFO    SenderThread:3351468 [sender.py:transition_state():602] send defer: 1
+2023-09-08 13:32:14,071 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: defer
+2023-09-08 13:32:14,071 INFO    HandlerThread:3351468 [handler.py:handle_request_defer():170] handle defer: 1
+2023-09-08 13:32:14,071 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: defer
+2023-09-08 13:32:14,071 INFO    SenderThread:3351468 [sender.py:send_request_defer():598] handle sender defer: 1
+2023-09-08 13:32:14,071 INFO    SenderThread:3351468 [sender.py:transition_state():602] send defer: 2
+2023-09-08 13:32:14,071 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: defer
+2023-09-08 13:32:14,071 INFO    HandlerThread:3351468 [handler.py:handle_request_defer():170] handle defer: 2
+2023-09-08 13:32:14,072 INFO    HandlerThread:3351468 [system_monitor.py:finish():190] Stopping system monitor
+2023-09-08 13:32:14,072 DEBUG   SystemMonitor:3351468 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-09-08 13:32:14,074 DEBUG   SystemMonitor:3351468 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-09-08 13:32:14,078 INFO    HandlerThread:3351468 [interfaces.py:finish():202] Joined cpu monitor
+2023-09-08 13:32:14,079 INFO    HandlerThread:3351468 [interfaces.py:finish():202] Joined disk monitor
+2023-09-08 13:32:14,114 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/wandb-summary.json
+2023-09-08 13:32:14,575 INFO    HandlerThread:3351468 [interfaces.py:finish():202] Joined gpu monitor
+2023-09-08 13:32:14,576 INFO    HandlerThread:3351468 [interfaces.py:finish():202] Joined memory monitor
+2023-09-08 13:32:14,577 INFO    HandlerThread:3351468 [interfaces.py:finish():202] Joined network monitor
+2023-09-08 13:32:14,578 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: defer
+2023-09-08 13:32:14,578 INFO    SenderThread:3351468 [sender.py:send_request_defer():598] handle sender defer: 2
+2023-09-08 13:32:14,578 INFO    SenderThread:3351468 [sender.py:transition_state():602] send defer: 3
+2023-09-08 13:32:14,579 DEBUG   SenderThread:3351468 [sender.py:send():369] send: stats
+2023-09-08 13:32:14,581 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: defer
+2023-09-08 13:32:14,581 INFO    HandlerThread:3351468 [handler.py:handle_request_defer():170] handle defer: 3
+2023-09-08 13:32:14,582 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: defer
+2023-09-08 13:32:14,582 INFO    SenderThread:3351468 [sender.py:send_request_defer():598] handle sender defer: 3
+2023-09-08 13:32:14,582 INFO    SenderThread:3351468 [sender.py:transition_state():602] send defer: 4
+2023-09-08 13:32:14,582 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: defer
+2023-09-08 13:32:14,582 INFO    HandlerThread:3351468 [handler.py:handle_request_defer():170] handle defer: 4
+2023-09-08 13:32:14,583 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: defer
+2023-09-08 13:32:14,583 INFO    SenderThread:3351468 [sender.py:send_request_defer():598] handle sender defer: 4
+2023-09-08 13:32:14,583 INFO    SenderThread:3351468 [sender.py:transition_state():602] send defer: 5
+2023-09-08 13:32:14,583 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: defer
+2023-09-08 13:32:14,583 INFO    HandlerThread:3351468 [handler.py:handle_request_defer():170] handle defer: 5
+2023-09-08 13:32:14,584 DEBUG   SenderThread:3351468 [sender.py:send():369] send: summary
+2023-09-08 13:32:14,586 INFO    SenderThread:3351468 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-09-08 13:32:14,587 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: defer
+2023-09-08 13:32:14,587 INFO    SenderThread:3351468 [sender.py:send_request_defer():598] handle sender defer: 5
+2023-09-08 13:32:14,587 INFO    SenderThread:3351468 [sender.py:transition_state():602] send defer: 6
+2023-09-08 13:32:14,587 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: defer
+2023-09-08 13:32:14,587 INFO    HandlerThread:3351468 [handler.py:handle_request_defer():170] handle defer: 6
+2023-09-08 13:32:14,588 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: defer
+2023-09-08 13:32:14,588 INFO    SenderThread:3351468 [sender.py:send_request_defer():598] handle sender defer: 6
+2023-09-08 13:32:14,588 INFO    SenderThread:3351468 [sender.py:transition_state():602] send defer: 7
+2023-09-08 13:32:14,588 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: status_report
+2023-09-08 13:32:14,588 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: defer
+2023-09-08 13:32:14,589 INFO    HandlerThread:3351468 [handler.py:handle_request_defer():170] handle defer: 7
+2023-09-08 13:32:14,589 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: defer
+2023-09-08 13:32:14,589 INFO    SenderThread:3351468 [sender.py:send_request_defer():598] handle sender defer: 7
+2023-09-08 13:32:15,066 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: poll_exit
+2023-09-08 13:32:15,115 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/wandb-summary.json
+2023-09-08 13:32:16,287 INFO    SenderThread:3351468 [sender.py:transition_state():602] send defer: 8
+2023-09-08 13:32:16,288 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: poll_exit
+2023-09-08 13:32:16,288 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: defer
+2023-09-08 13:32:16,289 INFO    HandlerThread:3351468 [handler.py:handle_request_defer():170] handle defer: 8
+2023-09-08 13:32:16,289 DEBUG   SenderThread:3351468 [sender.py:send_request():396] send_request: defer
+2023-09-08 13:32:16,289 INFO    SenderThread:3351468 [sender.py:send_request_defer():598] handle sender defer: 8
+2023-09-08 13:32:16,290 INFO    SenderThread:3351468 [job_builder.py:build():232] Attempting to build job artifact
+2023-09-08 13:32:16,290 INFO    SenderThread:3351468 [job_builder.py:build():256] is repo sourced job
+2023-09-08 13:32:16,295 INFO    SenderThread:3351468 [job_builder.py:build():297] adding wandb-job metadata file
+2023-09-08 13:32:16,303 INFO    SenderThread:3351468 [sender.py:transition_state():602] send defer: 9
+2023-09-08 13:32:16,304 DEBUG   HandlerThread:3351468 [handler.py:handle_request():144] handle_request: defer
+2023-09-08 13:32:16,304 INFO    HandlerThread:3351468 [handler.py:handle_request_defer():170] handle defer: 9
+2023-09-08 13:32:16,304 DEBUG   SenderThread:3351468 [sender.py:send():369] send: artifact
+2023-09-08 13:32:17,117 INFO    Thread-12 :3351468 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 13:32:18,148 WARNING StreamThr :3351468 [internal.py:is_dead():414] Internal process exiting, parent pid 3351350 disappeared
+2023-09-08 13:32:18,149 ERROR   StreamThr :3351468 [internal.py:wandb_internal():152] Internal process shutdown.
+2023-09-08 13:32:18,305 INFO    HandlerThread:3351468 [handler.py:finish():854] shutting down handler
+2023-09-08 13:32:18,309 INFO    WriterThread:3351468 [datastore.py:close():298] close: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/run-1yqmer71.wandb
+2023-09-08 13:32:18,355 INFO    wandb-upload_0:3351468 [upload_job.py:push():88] Skipped uploading /home/yxdong/.local/share/wandb/artifacts/staging/tmpmbiyhzz0
+2023-09-08 13:32:18,949 INFO    wandb-upload_1:3351468 [upload_job.py:push():91] Uploaded file /home/yxdong/.local/share/wandb/artifacts/staging/tmpg094j_mb
+2023-09-08 13:32:22,165 INFO    SenderThread:3351468 [sender.py:send_artifact():1450] sent artifact job-git_github.com_kkkjj-d_nanoGPT-eva.git_train.py - {'id': 'QXJ0aWZhY3Q6NTYyNDY2MTMx', 'digest': 'c42abf0f91811bc41a3a9913de756d49', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjkyMjU3Njkx', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NTYxNjIzMzM0', 'versionIndex': 3}}, 'version': 'latest'}
+2023-09-08 13:32:22,166 INFO    SenderThread:3351468 [sender.py:finish():1526] shutting down sender
+2023-09-08 13:32:22,166 INFO    SenderThread:3351468 [dir_watcher.py:finish():359] shutting down directory watcher
+2023-09-08 13:32:23,120 INFO    SenderThread:3351468 [dir_watcher.py:finish():389] scan: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files
+2023-09-08 13:32:23,121 INFO    SenderThread:3351468 [dir_watcher.py:finish():403] scan save: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/config.yaml config.yaml
+2023-09-08 13:32:23,122 INFO    SenderThread:3351468 [dir_watcher.py:finish():403] scan save: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/wandb-summary.json wandb-summary.json
+2023-09-08 13:32:23,123 INFO    SenderThread:3351468 [dir_watcher.py:finish():403] scan save: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/requirements.txt requirements.txt
+2023-09-08 13:32:23,131 INFO    SenderThread:3351468 [dir_watcher.py:finish():403] scan save: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/conda-environment.yaml conda-environment.yaml
+2023-09-08 13:32:23,134 INFO    SenderThread:3351468 [dir_watcher.py:finish():403] scan save: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/wandb-metadata.json wandb-metadata.json
+2023-09-08 13:32:23,135 INFO    SenderThread:3351468 [dir_watcher.py:finish():403] scan save: /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log output.log
+2023-09-08 13:32:23,143 INFO    SenderThread:3351468 [file_pusher.py:finish():159] shutting down file pusher
+2023-09-08 13:32:23,149 INFO    SenderThread:3351468 [file_pusher.py:join():164] waiting for file pusher
+2023-09-08 13:32:23,862 INFO    wandb-upload_0:3351468 [upload_job.py:push():133] Uploaded file /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/config.yaml
+2023-09-08 13:32:24,621 INFO    wandb-upload_3:3351468 [upload_job.py:push():133] Uploaded file /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/conda-environment.yaml
+2023-09-08 13:32:24,938 INFO    wandb-upload_4:3351468 [upload_job.py:push():133] Uploaded file /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/output.log
+2023-09-08 13:32:25,213 INFO    wandb-upload_2:3351468 [upload_job.py:push():133] Uploaded file /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/requirements.txt
+2023-09-08 13:32:37,330 INFO    wandb-upload_1:3351468 [upload_job.py:push():133] Uploaded file /home/yxdong/nano-gpt-test/nanoGPT-eva/wandb/run-20230908_124718-1yqmer71/files/wandb-summary.json
